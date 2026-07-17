@@ -17,8 +17,7 @@ export default function LoadingScreen({ onDone }: { onDone: () => void }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    const shortcut = sessionStorage.getItem("onesmg_intro") === "1" || reduced;
-    if (shortcut) {
+    if (reduced) {
       setVisible(false);
       onDone();
       return;
@@ -44,7 +43,6 @@ export default function LoadingScreen({ onDone }: { onDone: () => void }) {
     // Dash line sweep, then fade out root and hand off to the site
     const tl = gsap.timeline({
       onComplete: () => {
-        sessionStorage.setItem("onesmg_intro", "1");
         setVisible(false);
         onDone();
       },
@@ -76,7 +74,7 @@ export default function LoadingScreen({ onDone }: { onDone: () => void }) {
       className="fixed inset-0 z-[10000] overflow-hidden"
       style={{
         background:
-          "radial-gradient(ellipse at 50% 45%, #ffffff 0%, #f2f2f4 60%, #e8e8ec 100%)",
+          "radial-gradient(ellipse at 50% 45%, #0a0a0f 0%, #050507 60%, #000 100%)",
       }}
       aria-hidden={progress >= 100}
     >
@@ -110,7 +108,7 @@ export default function LoadingScreen({ onDone }: { onDone: () => void }) {
       {/* Dark streak on exit */}
       <div
         ref={dashLineRef}
-        className="absolute left-0 top-1/2 h-px w-full origin-left bg-ink-950"
+        className="absolute left-0 top-1/2 h-px w-full origin-left bg-white"
         style={{ transform: "scaleX(0)" }}
       />
     </div>

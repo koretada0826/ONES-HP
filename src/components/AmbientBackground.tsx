@@ -35,7 +35,7 @@ export default function AmbientBackground() {
     resize();
 
     // Particles
-    const COUNT = window.innerWidth < 900 ? 22 : 38;
+    const COUNT = window.innerWidth < 640 ? 10 : window.innerWidth < 900 ? 16 : 26;
     interface P {
       x: number;
       y: number;

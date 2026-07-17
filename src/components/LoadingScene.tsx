@@ -55,11 +55,11 @@ function makeSprite(): THREE.CanvasTexture {
   s.height = 64;
   const g = s.getContext("2d")!;
   const grad = g.createRadialGradient(32, 32, 0, 32, 32, 32);
-  // Dark particles for white theme
-  grad.addColorStop(0.0, "rgba(10,10,14,1.0)");
-  grad.addColorStop(0.25, "rgba(20,20,28,0.7)");
-  grad.addColorStop(0.55, "rgba(196,137,122,0.25)");
-  grad.addColorStop(1.0, "rgba(255,255,255,0)");
+  // Bright particles for dark theme
+  grad.addColorStop(0.0, "rgba(255,255,255,1.0)");
+  grad.addColorStop(0.25, "rgba(255,240,225,0.85)");
+  grad.addColorStop(0.55, "rgba(196,137,122,0.35)");
+  grad.addColorStop(1.0, "rgba(0,0,0,0)");
   g.fillStyle = grad;
   g.fillRect(0, 0, 64, 64);
   const tex = new THREE.CanvasTexture(s);
@@ -88,10 +88,10 @@ function ParticleSystem({ onDone }: { onDone: () => void }) {
     const seeds = new Float32Array(count);
     const colors = new Float32Array(count * 3);
     const palette: [number, number, number][] = [
-      [0.05, 0.05, 0.08], // near-black
-      [0.15, 0.15, 0.2], // dark ink
-      [0.5, 0.32, 0.28], // deep copper
-      [0.83, 0.58, 0.5], // rose accent
+      [1.0, 1.0, 1.0], // pure white
+      [1.0, 0.95, 0.9], // warm white
+      [0.83, 0.58, 0.5], // rose copper
+      [1.0, 0.7, 0.55], // bright copper
     ];
     for (let i = 0; i < count; i++) {
       const t = targets[i];
@@ -242,7 +242,7 @@ function ParticleSystem({ onDone }: { onDone: () => void }) {
         map={sprite}
         transparent
         depthWrite={false}
-        blending={THREE.NormalBlending}
+        blending={THREE.AdditiveBlending}
         vertexColors
         opacity={0.95}
         sizeAttenuation

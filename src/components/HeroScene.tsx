@@ -66,7 +66,7 @@ function Rocks({ scrollProgress }: { scrollProgress: number }) {
   const meshRefs = useRef<THREE.Mesh[]>([]);
   const { size } = useThree();
   const isMobile = size.width < 900;
-  const COUNT = isMobile ? 12 : 24;
+  const COUNT = isMobile ? 6 : 16;
 
   const rocks = useMemo<RockData[]>(() => {
     return Array.from({ length: COUNT }, () => {
@@ -297,8 +297,9 @@ export default function HeroScene({ scrollProgress, visible }: HeroSceneProps) {
     <Canvas
       className="!absolute inset-0"
       camera={{ position: [0, 0, 12], fov: 42 }}
-      dpr={[1, 2]}
-      gl={{ antialias: true, alpha: true }}
+      dpr={[1, 1.5]}
+      gl={{ antialias: true, alpha: true, powerPreference: "high-performance" }}
+      frameloop="always"
       style={{ background: "transparent" }}
     >
       <AdaptiveDpr pixelated />
