@@ -83,7 +83,7 @@ export default function ServiceCard({ index, title, ja, desc, icon }: Props) {
         onMouseMove={onMove}
         onMouseLeave={onLeave}
         onMouseEnter={() => setCursor("open")}
-        className="relative h-full min-h-[320px] cursor-none border border-white/10 bg-ink-900/80 p-8 backdrop-blur transition-[border-color,background-color] duration-500 hover:border-white/40"
+        className="relative h-full min-h-[320px] cursor-none border border-black/10 bg-ink-900/80 p-8 backdrop-blur transition-[border-color,background-color] duration-500 hover:border-white/40"
         style={{ transformStyle: "preserve-3d", transition: "transform 0.35s cubic-bezier(0.22,1,0.36,1)" }}
       >
         <div
@@ -105,15 +105,15 @@ export default function ServiceCard({ index, title, ja, desc, icon }: Props) {
         <h3 className="mt-8 font-display text-xl font-bold uppercase tracking-[0.14em] text-white transition-transform duration-500 group-hover:-translate-y-1">
           {title}
         </h3>
-        <p className="mt-1 text-xs tracking-[0.14em] text-white/45">{ja}</p>
+        <p className="mt-1 text-xs tracking-[0.14em] text-ink-950/45">{ja}</p>
 
         {/* Desc */}
-        <p className="mt-6 text-[13px] leading-[1.9] text-white/60 transition-colors duration-500 group-hover:text-white/85">
+        <p className="mt-6 text-[13px] leading-[1.9] text-ink-950/60 transition-colors duration-500 group-hover:text-ink-950/80">
           {desc}
         </p>
 
         {/* Arrow */}
-        <div className="absolute bottom-6 right-6 flex items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-white/60 transition-colors duration-500 group-hover:text-white">
+        <div className="absolute bottom-6 right-6 flex items-center gap-2 text-[10px] uppercase tracking-[0.32em] text-ink-950/60 transition-colors duration-500 group-hover:text-white">
           <span>VIEW MORE</span>
           <span className="inline-block transition-transform duration-500 group-hover:translate-x-2">→</span>
         </div>

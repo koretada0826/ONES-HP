@@ -82,7 +82,7 @@ export default function Header({ visible }: { visible: boolean }) {
       <header
         className={`fixed inset-x-0 top-0 z-[100] transition-all duration-500 ${
           scrolled || menuOpen
-            ? "backdrop-blur-md bg-black/40 border-b border-white/10"
+            ? "backdrop-blur-md bg-white/85 border-b border-black/10"
             : "bg-transparent"
         }`}
       >
@@ -102,7 +102,7 @@ export default function Header({ visible }: { visible: boolean }) {
                 height={44}
                 priority
                 unoptimized
-                className="h-8 w-auto invert md:h-11"
+                className="h-8 w-auto brightness-0 md:h-11"
               />
             </a>
           </div>
@@ -117,7 +117,7 @@ export default function Header({ visible }: { visible: boolean }) {
                 rel={n.href.startsWith("http") ? "noopener" : undefined}
                 onMouseEnter={() => setCursor("open")}
                 onMouseLeave={() => setCursor("default")}
-                className="group relative overflow-hidden text-[11px] font-medium uppercase tracking-[0.32em] text-white/85"
+                className="group relative overflow-hidden text-[11px] font-medium uppercase tracking-[0.32em] text-ink-950/80"
               >
                 <span
                   ref={(el) => {
@@ -127,7 +127,7 @@ export default function Header({ visible }: { visible: boolean }) {
                 >
                   {n.label}
                 </span>
-                <span className="pointer-events-none absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-white transition-transform duration-500 group-hover:origin-left group-hover:scale-x-100" />
+                <span className="pointer-events-none absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-ink-950 transition-transform duration-500 group-hover:origin-left group-hover:scale-x-100" />
               </a>
             ))}
           </nav>
@@ -156,16 +156,16 @@ export default function Header({ visible }: { visible: boolean }) {
                   rx="22"
                   ry="22"
                   fill="none"
-                  stroke="rgba(255,255,255,0.55)"
+                  stroke="rgba(10,10,14,0.55)"
                   strokeWidth="1"
                 />
               </svg>
               <span className="relative z-10 flex items-center gap-2">
                 <span
-                  className="pointer-events-none absolute inset-0 -z-10 scale-0 rounded-full bg-white transition-transform duration-500 ease-out group-hover:scale-[3]"
+                  className="pointer-events-none absolute inset-0 -z-10 scale-0 rounded-full bg-ink-950 transition-transform duration-500 ease-out group-hover:scale-[3]"
                   style={{ transformOrigin: "center" }}
                 />
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-ink-950">
+                <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
                   CONTACT
                 </span>
                 <span className="relative z-10 inline-flex h-4 w-4 items-center justify-center overflow-hidden transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
@@ -192,17 +192,17 @@ export default function Header({ visible }: { visible: boolean }) {
             >
               <span className="sr-only">Menu</span>
               <span
-                className={`absolute block h-[1.5px] w-6 bg-white transition-transform duration-300 ${
+                className={`absolute block h-[1.5px] w-6 bg-ink-950 transition-transform duration-300 ${
                   menuOpen ? "rotate-45" : "-translate-y-[6px]"
                 }`}
               />
               <span
-                className={`absolute block h-[1.5px] w-6 bg-white transition-opacity duration-200 ${
+                className={`absolute block h-[1.5px] w-6 bg-ink-950 transition-opacity duration-200 ${
                   menuOpen ? "opacity-0" : "opacity-100"
                 }`}
               />
               <span
-                className={`absolute block h-[1.5px] w-6 bg-white transition-transform duration-300 ${
+                className={`absolute block h-[1.5px] w-6 bg-ink-950 transition-transform duration-300 ${
                   menuOpen ? "-rotate-45" : "translate-y-[6px]"
                 }`}
               />
@@ -223,7 +223,7 @@ export default function Header({ visible }: { visible: boolean }) {
             transition={{ duration: 0.35 }}
           >
             <motion.div
-              className="absolute inset-0 bg-[#050507]"
+              className="absolute inset-0 bg-white"
               initial={{ clipPath: "inset(0 0 100% 0)" }}
               animate={{ clipPath: "inset(0 0 0% 0)" }}
               exit={{ clipPath: "inset(100% 0 0 0)" }}
@@ -242,7 +242,7 @@ export default function Header({ visible }: { visible: boolean }) {
                       duration: 0.6,
                       ease: [0.22, 1, 0.36, 1],
                     }}
-                    className="overflow-hidden border-b border-white/10"
+                    className="overflow-hidden border-b border-black/10"
                   >
                     <a
                       href={n.href}
@@ -254,7 +254,7 @@ export default function Header({ visible }: { visible: boolean }) {
                       <span className="font-display text-3xl font-black tracking-tight text-white">
                         {n.label}
                       </span>
-                      <span className="text-xs uppercase tracking-[0.32em] text-white/50">
+                      <span className="text-xs uppercase tracking-[0.32em] text-ink-950/50">
                         0{i + 1}
                       </span>
                     </a>
@@ -266,7 +266,7 @@ export default function Header({ visible }: { visible: boolean }) {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0 }}
                 transition={{ delay: 0.55, duration: 0.6 }}
-                className="flex flex-col gap-3 text-[10px] uppercase tracking-[0.32em] text-white/55"
+                className="flex flex-col gap-3 text-[10px] uppercase tracking-[0.32em] text-ink-950/55"
               >
                 <span>ONES MANAGEMENT</span>
                 <span>サービス業の未来を創る。</span>

@@ -85,10 +85,10 @@ export default function Footer() {
                 width={180}
                 height={56}
                 unoptimized
-                className="h-12 w-auto invert"
+                className="h-12 w-auto brightness-0"
               />
             </div>
-            <p className="text-xs leading-[2] text-white/75">
+            <p className="text-xs leading-[2] text-ink-950/70">
               {COMPANY.name}
               <br />
               {COMPANY.brand}
@@ -99,7 +99,7 @@ export default function Footer() {
         </div>
 
         {/* Middle nav */}
-        <ul ref={navRef} className="grid grid-cols-2 gap-y-3 text-[11px] uppercase tracking-[0.32em] text-white/75">
+        <ul ref={navRef} className="grid grid-cols-2 gap-y-3 text-[11px] uppercase tracking-[0.32em] text-ink-950/70">
           {[
             { label: "TOP", href: "/" },
             { label: "COMPANY", href: "/company" },
@@ -112,7 +112,7 @@ export default function Footer() {
                 href={l.href}
                 onMouseEnter={() => setCursor("open")}
                 onMouseLeave={() => setCursor("default")}
-                className="transition-colors hover:text-copper-300"
+                className="transition-colors hover:text-[#c4897a]"
               >
                 {l.label}
               </a>
@@ -124,7 +124,7 @@ export default function Footer() {
 
       <div ref={rulesRef} className="mx-auto mt-16 max-w-[1600px] space-y-4 px-6 md:px-10">
         <hr className="h-px origin-left border-0 bg-white/15" style={{ transform: "scaleX(0)" }} />
-        <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.32em] text-white/50">
+        <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.32em] text-ink-950/50">
           <span>Copyright © {COMPANY.nameEn} All rights reserved.</span>
           <span>ONES MANAGEMENT</span>
         </div>

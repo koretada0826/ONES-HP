@@ -62,24 +62,24 @@ export default function ServiceSection() {
               </h2>
               <div
                 ref={titleMaskRef}
-                className="pointer-events-none absolute inset-0 bg-[#050507]"
+                className="pointer-events-none absolute inset-0 bg-white"
                 style={{ transform: "scaleX(0)", transformOrigin: "left center" }}
                 aria-hidden
               />
             </div>
 
-            <p className="mt-6 max-w-xl text-[13px] leading-[2] text-white/65">
+            <p className="mt-6 max-w-xl text-[13px] leading-[2] text-ink-950/65">
               戦略設計から制作、運用・改善までを一気通貫で支援。
               <br className="hidden md:inline" />
               デザインとマーケティングの力で、サービス業のパフォーマンスを最大化します。
             </p>
 
             {/* Service name block — thin divider */}
-            <div className="mt-12 border-t border-white/12 pt-8">
+            <div className="mt-12 border-t border-black/12 pt-8">
               <p className="text-lg font-bold tracking-[0.05em] text-white md:text-xl">
                 {MAIN_SERVICE.title}
               </p>
-              <p className="mt-2 text-xs tracking-[0.14em] text-white/60">
+              <p className="mt-2 text-xs tracking-[0.14em] text-ink-950/60">
                 {MAIN_SERVICE.titleSub}
               </p>
             </div>
@@ -97,9 +97,9 @@ export default function ServiceSection() {
                     delay: i * 0.1,
                     ease: [0.22, 1, 0.36, 1],
                   }}
-                  className="relative border-t border-white/12 pt-4 pl-14 text-[13px] leading-[1.9] text-white/80"
+                  className="relative border-t border-black/12 pt-4 pl-14 text-[13px] leading-[1.9] text-ink-950/80"
                 >
-                  <span className="absolute left-0 top-4 font-display text-[10px] tracking-[0.4em] text-copper-300">
+                  <span className="absolute left-0 top-4 font-display text-[10px] tracking-[0.4em] text-[#c4897a]">
                     0{i + 1}
                   </span>
                   「{c}」
@@ -107,13 +107,13 @@ export default function ServiceSection() {
               ))}
             </ul>
 
-            <p className="mt-8 text-[13px] leading-[2] text-white/80">
+            <p className="mt-8 text-[13px] leading-[2] text-ink-950/80">
               {MAIN_SERVICE.summary}
             </p>
 
             <a
               href="/product"
-              className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-300 transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
+              className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#c4897a] transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
             >
               サービス詳細
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -148,17 +148,17 @@ export default function ServiceSection() {
         </div>
 
         {/* Sub service: TALENT MANAGEMENT */}
-        <div className="mt-28 border-t border-white/12 pt-16 md:mt-32 md:pt-20">
+        <div className="mt-28 border-t border-black/12 pt-16 md:mt-32 md:pt-20">
           <div className="chip mb-6">{SUB_SERVICE.labelEn}</div>
           <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
             <div>
               <h3 className="text-[clamp(1.75rem,3vw,2.6rem)] font-black leading-[1.05] tracking-tight text-white">
                 {SUB_SERVICE.title}
               </h3>
-              <p className="mt-3 text-sm tracking-[0.14em] text-white/65">
+              <p className="mt-3 text-sm tracking-[0.14em] text-ink-950/65">
                 {SUB_SERVICE.ja}
               </p>
-              <p className="mt-6 max-w-lg text-[13px] leading-[2] text-white/80">
+              <p className="mt-6 max-w-lg text-[13px] leading-[2] text-ink-950/80">
                 {SUB_SERVICE.desc}
               </p>
             </div>
@@ -183,23 +183,23 @@ export default function ServiceSection() {
         </div>
 
         {/* Sub service 02: AI × DIGITAL SOLUTIONS */}
-        <div className="mt-28 border-t border-white/12 pt-16 md:mt-32 md:pt-20">
+        <div className="mt-28 border-t border-black/12 pt-16 md:mt-32 md:pt-20">
           <div className="chip mb-6">{AI_SERVICE.labelEn}</div>
           <div className="grid gap-10 md:grid-cols-[1.1fr_1fr] md:items-start md:gap-16">
             <div>
               <h3 className="text-[clamp(1.75rem,3vw,2.6rem)] font-black leading-[1.05] tracking-tight text-white">
                 {AI_SERVICE.title}
               </h3>
-              <p className="mt-3 text-sm tracking-[0.14em] text-white/65">
+              <p className="mt-3 text-sm tracking-[0.14em] text-ink-950/65">
                 {AI_SERVICE.ja}
               </p>
               <div className="mt-6 h-px w-16 bg-copper-500" />
-              <p className="mt-6 max-w-xl text-[13px] leading-[2] text-white/80">
+              <p className="mt-6 max-w-xl text-[13px] leading-[2] text-ink-950/80">
                 {AI_SERVICE.desc}
               </p>
               <a
                 href="/product#ai"
-                className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-300 transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
+                className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#c4897a] transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
               >
                 AIサービス詳細
                 <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -215,19 +215,19 @@ export default function ServiceSection() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, margin: "-10% 0px" }}
                   transition={{ duration: 0.7, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
-                  className="group relative flex items-start gap-4 border-t border-white/12 pt-4"
+                  className="group relative flex items-start gap-4 border-t border-black/12 pt-4"
                 >
-                  <span className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-copper-300 min-w-[3.4rem] pt-1">
+                  <span className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-[#c4897a] min-w-[3.4rem] pt-1">
                     {item.no}
                   </span>
                   <div className="flex-1">
-                    <div className="text-[10px] font-bold uppercase tracking-[0.32em] text-white/55">
+                    <div className="text-[10px] font-bold uppercase tracking-[0.32em] text-ink-950/55">
                       {item.subtag}
                     </div>
                     <div className="mt-1 text-[15px] font-bold leading-[1.5] text-white">
                       {item.title}
                     </div>
-                    <p className="mt-2 text-[12px] leading-[1.9] text-white/75">
+                    <p className="mt-2 text-[12px] leading-[1.9] text-ink-950/70">
                       {item.desc}
                     </p>
                   </div>

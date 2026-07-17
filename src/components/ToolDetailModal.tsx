@@ -49,12 +49,12 @@ export default function ToolDetailModal({ feature, onClose }: Props) {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: 60 }}
           transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-          className="fixed inset-x-0 bottom-0 top-6 z-[9600] mx-auto flex max-w-[1000px] flex-col overflow-y-auto bg-[#0a0a0f] shadow-2xl md:top-14"
+          className="fixed inset-x-0 bottom-0 top-6 z-[9600] mx-auto flex max-w-[1000px] flex-col overflow-y-auto bg-white shadow-2xl md:top-14"
           role="dialog"
           aria-modal="true"
         >
-          <div className="sticky top-0 z-10 flex items-center justify-between border-b border-white/12 bg-white/[0.06] px-6 py-4 backdrop-blur md:px-10">
-            <div className="flex items-center gap-3 font-display text-[10px] uppercase tracking-[0.42em] text-white/65">
+          <div className="sticky top-0 z-10 flex items-center justify-between border-b border-black/12 bg-white px-6 py-4 backdrop-blur md:px-10">
+            <div className="flex items-center gap-3 font-display text-[10px] uppercase tracking-[0.42em] text-ink-950/65">
               <span className="text-[#c4897a]">{feature.no}</span>
               <span>/</span>
               <span>{feature.subtag}</span>
@@ -112,7 +112,7 @@ export default function ToolDetailModal({ feature, onClose }: Props) {
             <div className="text-[11px] font-bold uppercase tracking-[0.32em] text-[#c4897a]">
               主要な機能
             </div>
-            <ul className="mt-6 flex flex-col divide-y divide-white/12 border-t border-b border-white/12">
+            <ul className="mt-6 flex flex-col divide-y divide-black/12 border-t border-b border-black/12">
               {feature.points.map((p, i) => (
                 <motion.li
                   key={i}
@@ -121,10 +121,10 @@ export default function ToolDetailModal({ feature, onClose }: Props) {
                   transition={{ delay: 0.3 + i * 0.12, duration: 0.6 }}
                   className="grid grid-cols-[60px_1fr] items-baseline gap-4 py-6"
                 >
-                  <span className="font-display text-[10px] font-bold tracking-[0.32em] text-white/50">
+                  <span className="font-display text-[10px] font-bold tracking-[0.32em] text-ink-950/50">
                     0{i + 1}
                   </span>
-                  <p className="text-[14px] leading-[1.95] text-white/80">{p}</p>
+                  <p className="text-[14px] leading-[1.95] text-ink-950/80">{p}</p>
                 </motion.li>
               ))}
             </ul>

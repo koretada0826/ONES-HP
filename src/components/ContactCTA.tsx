@@ -101,7 +101,7 @@ export default function ContactCTA() {
           </div>
         </div>
 
-        <p className="mt-14 max-w-lg text-[13px] leading-[2] text-white/65">
+        <p className="mt-14 max-w-lg text-[13px] leading-[2] text-ink-950/65">
           お問い合わせ・ご相談はこちらからお気軽にどうぞ。
           <br />
           通常2営業日以内にご返信いたします。
@@ -145,7 +145,7 @@ export default function ContactCTA() {
           </span>
         </motion.a>
 
-        <p className="mt-4 text-[10px] tracking-[0.28em] text-white/50">
+        <p className="mt-4 text-[10px] tracking-[0.28em] text-ink-950/50">
           別タブでフォームが開きます
         </p>
 

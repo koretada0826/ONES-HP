@@ -44,7 +44,7 @@ export default function CtaBlock({
             whileInView={{ opacity: 1, filter: "blur(0px)" }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 1.0, delay: 0.2, ease: [0.33, 1, 0.68, 1] }}
-            className="mx-auto mt-6 max-w-xl whitespace-pre-line text-[13px] leading-[2] text-white/65"
+            className="mx-auto mt-6 max-w-xl whitespace-pre-line text-[13px] leading-[2] text-ink-950/65"
           >
             {subtitle}
           </motion.p>
@@ -62,7 +62,7 @@ export default function CtaBlock({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.9, delay: 0.35, ease: [0.22, 1, 0.36, 1] }}
-            className="group relative inline-flex h-12 items-center gap-4 overflow-hidden border border-white bg-white px-7 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-950"
+            className="group relative inline-flex h-12 items-center gap-4 overflow-hidden border border-ink-950 bg-ink-950 px-7 text-[11px] font-semibold uppercase tracking-[0.32em] text-white"
           >
             <span
               className="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-[#c4897a] transition-transform duration-500 ease-out group-hover:scale-x-100"
@@ -87,7 +87,7 @@ export default function CtaBlock({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="group relative inline-flex h-12 items-center gap-3 overflow-hidden border border-white/40 bg-transparent px-6 text-[11px] font-semibold uppercase tracking-[0.32em] text-white transition-colors duration-500 hover:border-white hover:text-ink-950"
+            className="group relative inline-flex h-12 items-center gap-3 overflow-hidden border border-white/40 bg-transparent px-6 text-[11px] font-semibold uppercase tracking-[0.32em] text-white transition-colors duration-500 hover:border-ink-950 hover:bg-ink-950 hover:text-white"
           >
             <span
               className="pointer-events-none absolute inset-0 origin-right scale-x-0 bg-white transition-transform duration-500 ease-out group-hover:origin-left group-hover:scale-x-100"
@@ -105,7 +105,7 @@ export default function CtaBlock({
           </motion.a>
         </div>
 
-        <p className="mt-6 text-[10px] uppercase tracking-[0.32em] text-white/45">
+        <p className="mt-6 text-[10px] uppercase tracking-[0.32em] text-ink-950/45">
           別タブでフォームが開きます
         </p>
       </div>

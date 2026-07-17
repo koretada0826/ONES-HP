@@ -129,7 +129,7 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
         </span>
       </h1>
 
-      <p className="mt-5 font-display text-xs uppercase tracking-[0.28em] text-white/55">
+      <p className="mt-5 font-display text-xs uppercase tracking-[0.28em] text-ink-950/55">
         of the SERVICE INDUSTRY
       </p>
 
@@ -148,7 +148,7 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
 
       <div
         ref={descRef}
-        className="mt-6 max-w-[520px] border-t border-white/15 pt-5 text-[12px] leading-[1.95] text-white/65 md:mt-8 md:pt-6 md:text-[13px] md:leading-[2]"
+        className="mt-6 max-w-[520px] border-t border-black/15 pt-5 text-[12px] leading-[1.95] text-ink-950/65 md:mt-8 md:pt-6 md:text-[13px] md:leading-[2]"
       >
         <p>
           多種多様なサービス事業者様の成長を、現場に寄り添いながら全力で支援します。

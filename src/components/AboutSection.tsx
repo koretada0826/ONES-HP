@@ -151,7 +151,7 @@ export default function AboutSection() {
             {/* Corner label */}
             <div className="pointer-events-none absolute bottom-5 left-5 flex items-center gap-3">
               <span className="h-px w-8 bg-white/70" />
-              <span className="font-display text-[10px] uppercase tracking-[0.4em] text-white/85">
+              <span className="font-display text-[10px] uppercase tracking-[0.4em] text-ink-950/80">
                 ONES MANAGEMENT
               </span>
             </div>
@@ -159,7 +159,7 @@ export default function AboutSection() {
 
           {/* Right: content */}
           <div className="flex flex-col justify-center">
-            <p className="max-w-xl text-[14px] leading-[2.1] text-white/80">
+            <p className="max-w-xl text-[14px] leading-[2.1] text-ink-950/80">
               {COMPANY.name}は、多種多様なサービス事業者様の成長を、
               現場に寄り添いながら全力で支援します。
               接客・店舗オペレーションから数値分析、人事制度設計まで、
@@ -170,7 +170,7 @@ export default function AboutSection() {
             {/* Values */}
             <ul
               ref={rulesRef}
-              className="mt-12 flex flex-col divide-y divide-white/12 border-t border-b border-white/12"
+              className="mt-12 flex flex-col divide-y divide-black/12 border-t border-b border-black/12"
             >
               {VALUES.map((v) => (
                 <li
@@ -178,14 +178,14 @@ export default function AboutSection() {
                   className="grid grid-cols-1 gap-2 py-6 md:grid-cols-[180px_1fr] md:gap-8"
                 >
                   <div className="flex flex-col gap-1">
-                    <span className="font-display text-[10px] font-bold uppercase tracking-[0.4em] text-copper-300">
+                    <span className="font-display text-[10px] font-bold uppercase tracking-[0.4em] text-[#c4897a]">
                       {v.en}
                     </span>
                     <span className="text-[13px] font-bold tracking-[0.06em] text-white">
                       {v.ja}
                     </span>
                   </div>
-                  <p className="text-[13px] leading-[2] text-white/75">{v.desc}</p>
+                  <p className="text-[13px] leading-[2] text-ink-950/70">{v.desc}</p>
                 </li>
               ))}
             </ul>
@@ -193,7 +193,7 @@ export default function AboutSection() {
             <div className="mt-10">
               <a
                 href="/company"
-                className="group relative inline-flex h-11 items-center gap-3 border border-copper-500/50 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-300 transition-colors duration-300 hover:border-copper-600 hover:bg-copper-500 hover:text-white"
+                className="group relative inline-flex h-11 items-center gap-3 border border-copper-500/50 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-[#c4897a] transition-colors duration-300 hover:border-copper-600 hover:bg-copper-500 hover:text-white"
               >
                 会社詳細
                 <span className="transition-transform duration-300 group-hover:translate-x-1">

@@ -72,7 +72,7 @@ export default function TrackRecordSection() {
               つくるのは、<br />成果。
             </h2>
             <div className="mt-6 h-px w-16 bg-[#c4897a]" />
-            <p className="mt-8 max-w-md text-[13px] leading-[2] text-white/60">
+            <p className="mt-8 max-w-md text-[13px] leading-[2] text-ink-950/60">
               多様な業界のプロジェクトで培った経験とアイデアで、
               成果にこだわったサポートを提供します。
               国内各エリアにとどまらず、アジア圏をはじめとした海外での支援実績も有しています。
@@ -106,7 +106,7 @@ export default function TrackRecordSection() {
                   data-card
                   onMouseEnter={() => setCursor("view", "VIEW")}
                   onMouseLeave={() => setCursor("default")}
-                  className="group relative aspect-[9/14] w-[74vw] max-w-[280px] flex-none snap-start overflow-hidden border border-white/8 sm:w-[45vw] md:w-[260px] lg:w-[300px]"
+                  className="group relative aspect-[9/14] w-[74vw] max-w-[280px] flex-none snap-start overflow-hidden border border-black/8 sm:w-[45vw] md:w-[260px] lg:w-[300px]"
                 >
                   {/* Image full-bleed */}
                   <Image
@@ -123,11 +123,11 @@ export default function TrackRecordSection() {
 
                   {/* Top: index + label */}
                   <div className="absolute inset-x-5 top-5 flex items-center justify-between">
-                    <span className="font-display text-[10px] font-bold uppercase tracking-[0.32em] text-white/85">
+                    <span className="font-display text-[10px] font-bold uppercase tracking-[0.32em] text-ink-950/80">
                       ONE&apos;S / {String(i + 1).padStart(2, "0")}
                     </span>
                     <span
-                      className="font-display font-black leading-none text-white/85"
+                      className="font-display font-black leading-none text-ink-950/80"
                       style={{ fontSize: "2.2rem", letterSpacing: "-0.02em" }}
                     >
                       {c.kanji}
@@ -143,7 +143,7 @@ export default function TrackRecordSection() {
                       {c.items.slice(0, 4).map((item) => (
                         <li
                           key={item}
-                          className="relative pl-3 text-[11px] leading-[1.65] text-white/75"
+                          className="relative pl-3 text-[11px] leading-[1.65] text-ink-950/70"
                         >
                           <span className="absolute left-0 top-2 h-px w-1.5 bg-[#c4897a]" />
                           {item}
@@ -170,7 +170,7 @@ export default function TrackRecordSection() {
                   }}
                 />
               </div>
-              <span className="font-display text-[10px] uppercase tracking-[0.42em] text-white/60">
+              <span className="font-display text-[10px] uppercase tracking-[0.42em] text-ink-950/60">
                 {String(activeIdx + 1).padStart(2, "0")} /{" "}
                 {String(TRACK_RECORD.length).padStart(2, "0")}
               </span>

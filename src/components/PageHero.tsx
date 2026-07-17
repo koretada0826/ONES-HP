@@ -136,7 +136,7 @@ export default function PageHero({ labelEn, ja, lead, image }: Props) {
         </div>
         <p
           ref={leadRef}
-          className="mt-8 max-w-xl border-t border-white/12 pt-6 text-[13px] leading-[2] text-white/70 md:mt-14"
+          className="mt-8 max-w-xl border-t border-black/12 pt-6 text-[13px] leading-[2] text-ink-950/65 md:mt-14"
         >
           {lead}
         </p>

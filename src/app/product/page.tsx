@@ -51,7 +51,7 @@ export default function ProductPage() {
             <p className="text-xl font-bold leading-[1.7] text-white md:text-2xl">
               {PRODUCT_PAGE.main.tag}
             </p>
-            <p className="text-[14px] leading-[2.1] text-white/70">
+            <p className="text-[14px] leading-[2.1] text-ink-950/65">
               {PRODUCT_PAGE.main.desc}
             </p>
           </div>
@@ -121,7 +121,7 @@ export default function ProductPage() {
           </h2>
           <div className="mt-8 h-px w-16 bg-[#c4897a]" />
 
-          <p className="mt-10 max-w-2xl text-[14px] leading-[2.1] text-white/70">
+          <p className="mt-10 max-w-2xl text-[14px] leading-[2.1] text-ink-950/65">
             {PRODUCT_PAGE.tool.desc}
           </p>
 
@@ -140,7 +140,7 @@ export default function ProductPage() {
                 onClick={() => setOpenTool(f)}
                 onMouseEnter={() => setCursor("open", "OPEN")}
                 onMouseLeave={() => setCursor("default")}
-                className="group relative flex flex-col overflow-hidden border border-white/12 bg-white/[0.04] text-left backdrop-blur transition-[border-color,background-color] duration-500 hover:border-copper-400/60 hover:bg-white/[0.07]"
+                className="group relative flex flex-col overflow-hidden border border-black/12 bg-white/85 text-left backdrop-blur transition-[border-color,background-color] duration-500 hover:border-copper-400/60 hover:bg-white"
               >
                 <div className="relative aspect-[16/10] w-full overflow-hidden bg-ink-800">
                   <Image
@@ -169,15 +169,15 @@ export default function ProductPage() {
                   <div className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-[#c4897a]">
                     {f.no}
                   </div>
-                  <div className="mt-4 text-[11px] font-bold uppercase tracking-[0.24em] text-white/65">
+                  <div className="mt-4 text-[11px] font-bold uppercase tracking-[0.24em] text-ink-950/65">
                     {f.subtag}
                   </div>
                   <h3 className="mt-6 text-lg font-bold leading-[1.55] text-white">
                     {f.title}
                   </h3>
-                  <div className="mt-8 flex items-center justify-between border-t border-white/12 pt-5 text-[10px] uppercase tracking-[0.32em] text-white/75 transition-colors group-hover:text-copper-300">
+                  <div className="mt-8 flex items-center justify-between border-t border-black/12 pt-5 text-[10px] uppercase tracking-[0.32em] text-ink-950/70 transition-colors group-hover:text-[#c4897a]">
                     <span>詳細を見る</span>
-                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-copper-500/60 text-copper-300 transition-transform duration-500 group-hover:rotate-45 group-hover:border-copper-600">
+                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-copper-500/60 text-[#c4897a] transition-transform duration-500 group-hover:rotate-45 group-hover:border-copper-600">
                       +
                     </span>
                   </div>
@@ -212,7 +212,7 @@ export default function ProductPage() {
             <p className="text-xl font-bold leading-[1.7] text-white md:text-2xl">
               {AI_SERVICE.headline}
             </p>
-            <p className="text-[14px] leading-[2.1] text-white/70">
+            <p className="text-[14px] leading-[2.1] text-ink-950/65">
               {AI_SERVICE.desc}
             </p>
           </div>
@@ -229,7 +229,7 @@ export default function ProductPage() {
                   delay: (i % 3) * 0.1,
                   ease: [0.22, 1, 0.36, 1],
                 }}
-                className="group relative flex flex-col overflow-hidden border border-white/12 bg-white/[0.04] p-7 backdrop-blur transition-[border-color,background-color] duration-500 hover:border-copper-400/60 hover:bg-white/[0.07] md:p-8"
+                className="group relative flex flex-col overflow-hidden border border-black/12 bg-white/85 p-7 backdrop-blur transition-[border-color,background-color] duration-500 hover:border-copper-400/60 hover:bg-white md:p-8"
               >
                 {/* Huge outline index */}
                 <div
@@ -246,16 +246,16 @@ export default function ProductPage() {
                 </div>
 
                 <div className="relative z-10 flex flex-1 flex-col">
-                  <div className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-copper-300">
+                  <div className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-[#c4897a]">
                     {item.no}
                   </div>
-                  <div className="mt-4 text-[11px] font-bold uppercase tracking-[0.24em] text-white/65">
+                  <div className="mt-4 text-[11px] font-bold uppercase tracking-[0.24em] text-ink-950/65">
                     {item.subtag}
                   </div>
                   <h3 className="mt-5 text-lg font-bold leading-[1.5] text-white">
                     {item.title}
                   </h3>
-                  <p className="mt-5 border-t border-white/12 pt-4 text-[13px] leading-[2] text-white/75">
+                  <p className="mt-5 border-t border-black/12 pt-4 text-[13px] leading-[2] text-ink-950/70">
                     {item.desc}
                   </p>
                 </div>

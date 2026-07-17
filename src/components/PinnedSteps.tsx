@@ -108,7 +108,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
 
             <div className="absolute bottom-5 left-5 flex items-center gap-3">
               <span className="h-px w-8 bg-white/70" />
-              <span className="font-display text-[10px] uppercase tracking-[0.42em] text-white/85">
+              <span className="font-display text-[10px] uppercase tracking-[0.42em] text-ink-950/80">
                 {active.no}
               </span>
             </div>
@@ -139,7 +139,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
                 />
                 <div
                   className={`font-display text-[10px] uppercase tracking-[0.32em] transition-colors duration-500 ${
-                    i === activeIndex ? "text-copper-300" : "text-white/45"
+                    i === activeIndex ? "text-[#c4897a]" : "text-ink-950/45"
                   }`}
                 >
                   {s.no}
@@ -168,7 +168,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
                 {step.title}
               </h3>
 
-              <p className="mt-8 border-t border-white/12 pt-6 text-[14px] leading-[2.1] text-white/80">
+              <p className="mt-8 border-t border-black/12 pt-6 text-[14px] leading-[2.1] text-ink-950/80">
                 {step.desc}
               </p>
 
@@ -177,7 +177,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
                 <div className="mt-8 flex flex-wrap gap-2">
                   {step.keywords.map((k, ki) => (
                     <StampReveal key={k} index={i * 10 + ki}>
-                      <span className="inline-block border border-copper-300/60 bg-copper-50/60 px-3 py-1.5 font-display text-[10px] uppercase tracking-[0.24em] text-copper-300 backdrop-blur transition-colors duration-300 hover:border-copper-600 hover:bg-copper-600 hover:text-white">
+                      <span className="inline-block border border-copper-300/60 bg-copper-50/60 px-3 py-1.5 font-display text-[10px] uppercase tracking-[0.24em] text-[#c4897a] backdrop-blur transition-colors duration-300 hover:border-copper-600 hover:bg-copper-600 hover:text-white">
                         {k}
                       </span>
                     </StampReveal>
@@ -186,7 +186,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
               )}
 
               {/* Index at bottom right for scale reference */}
-              <div className="mt-10 flex items-baseline justify-between border-t border-white/10 pt-4 text-[10px] uppercase tracking-[0.32em] text-white/45">
+              <div className="mt-10 flex items-baseline justify-between border-t border-black/10 pt-4 text-[10px] uppercase tracking-[0.32em] text-ink-950/45">
                 <span>
                   {String(i + 1).padStart(2, "0")} / {String(steps.length).padStart(2, "0")}
                 </span>

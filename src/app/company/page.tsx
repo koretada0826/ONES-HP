@@ -59,7 +59,7 @@ export default function CompanyPage() {
               {COMPANY_PAGE.mission.title}
             </h2>
             <div className="mt-6 h-px w-16 bg-[#c4897a]" />
-            <p className="mt-6 max-w-md text-[13px] leading-[2] text-white/60">
+            <p className="mt-6 max-w-md text-[13px] leading-[2] text-ink-950/60">
               私たちは、サービス業のパフォーマンスを最大化し、
               人が生み出す価値を最大化する存在でありたい。
               その想いを胸に、日々サービス事業者様と向き合っています。
@@ -85,7 +85,7 @@ export default function CompanyPage() {
             <div className="whitespace-pre-line text-2xl font-semibold leading-[1.85] tracking-[0.06em] text-white md:text-4xl">
               {COMPANY_PAGE.mission.copy}
             </div>
-            <p className="mt-8 border-t border-white/12 pt-6 text-[13px] leading-[2] text-white/65">
+            <p className="mt-8 border-t border-black/12 pt-6 text-[13px] leading-[2] text-ink-950/65">
               この2つを両輪として、私たちONESは、
               サービス業の現場に寄り添いながら、
               地域を超えた成長を実現していきます。
@@ -163,13 +163,13 @@ export default function CompanyPage() {
           />
           <div className="mt-8 h-px w-16 bg-[#c4897a]" />
 
-          <dl className="mt-14 flex flex-col divide-y divide-white/12 border-t border-b border-white/12">
+          <dl className="mt-14 flex flex-col divide-y divide-black/12 border-t border-b border-black/12">
             {COMPANY_PAGE.profile.map((row) => (
               <div
                 key={row.label}
-                className="profile-row group grid grid-cols-1 gap-2 py-6 transition-colors hover:bg-white/[0.04] md:grid-cols-[220px_1fr] md:gap-8 md:py-7"
+                className="profile-row group grid grid-cols-1 gap-2 py-6 transition-colors hover:bg-white/85 md:grid-cols-[220px_1fr] md:gap-8 md:py-7"
               >
-                <dt className="font-display text-[11px] font-bold uppercase tracking-[0.32em] text-white/60">
+                <dt className="font-display text-[11px] font-bold uppercase tracking-[0.32em] text-ink-950/60">
                   {row.label}
                 </dt>
                 <dd className="whitespace-pre-line text-[14px] leading-[1.95] text-white">

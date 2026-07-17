@@ -84,8 +84,8 @@ export default function CustomCursor() {
         style={{
           width: isBig ? 0 : 8,
           height: isBig ? 0 : 8,
-          background: "#f5f5f7",
-          boxShadow: "0 0 12px rgba(255,240,225,0.55), 0 0 0 1px rgba(0,0,0,0.35)",
+          background: "#0a0a0e",
+          boxShadow: "0 0 0 1px rgba(255,255,255,0.6)",
         }}
       />
       {/* Ring / label container */}
@@ -98,9 +98,9 @@ export default function CustomCursor() {
           width: isBig ? 116 : 38,
           height: isBig ? 116 : 38,
           border: isBig
-            ? "1px solid rgba(255,255,255,0.9)"
-            : "1px solid rgba(255,255,255,0.55)",
-          background: isBig ? "rgba(196,137,122,0.28)" : "transparent",
+            ? "1px solid rgba(10,10,14,0.9)"
+            : "1px solid rgba(10,10,14,0.55)",
+          background: isBig ? "rgba(10,10,14,0.92)" : "transparent",
           backdropFilter: isBig ? "blur(10px)" : undefined,
           fontFamily: "var(--font-display)",
         }}
