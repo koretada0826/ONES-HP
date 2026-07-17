@@ -99,7 +99,7 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
     <div ref={rootRef} className="relative z-10 max-w-[720px]">
       <div className="chip mb-6 md:mb-8">多種多様なサービス事業者様へ</div>
 
-      <h1 className="font-display font-black uppercase leading-[0.92] tracking-[-0.01em] text-white">
+      <h1 className="font-display font-black uppercase leading-[0.92] tracking-[-0.01em] text-ink-950">
         <span className="block overflow-hidden pb-2">
           <span
             ref={line1Ref}
@@ -130,17 +130,17 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
       </h1>
 
       <p className="mt-5 font-display text-xs uppercase tracking-[0.28em] text-ink-950/55">
-        of the SERVICE INDUSTRY
+        of the SERVICE INDUSTRY — <span className="text-[#c4897a]">POWERED BY AI</span>
       </p>
 
       <div ref={jaRef} className="mt-6 overflow-visible md:mt-8">
         <div className="overflow-hidden">
-          <div className="text-base font-semibold tracking-[0.12em] text-white md:text-2xl">
+          <div className="text-base font-semibold tracking-[0.12em] text-ink-950 md:text-2xl">
             サービス業の未来を創る。
           </div>
         </div>
         <div className="overflow-hidden">
-          <div className="text-base font-semibold tracking-[0.12em] text-white md:text-2xl">
+          <div className="text-base font-semibold tracking-[0.12em] text-ink-950 md:text-2xl">
             人が生み出す価値の最大化。
           </div>
         </div>
@@ -151,9 +151,11 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
         className="mt-6 max-w-[520px] border-t border-black/15 pt-5 text-[12px] leading-[1.95] text-ink-950/65 md:mt-8 md:pt-6 md:text-[13px] md:leading-[2]"
       >
         <p>
-          多種多様なサービス事業者様の成長を、現場に寄り添いながら全力で支援します。
+          店舗経営・運営サポートに加え、AI・デジタル技術を活用した
+          <span className="font-semibold text-ink-950">HP / LP 制作、業務効率化ツール、AIチャットボット</span>
+          で、
           <br className="hidden md:inline" />
-          地域を超えたグローバル展開で、サービス業の未来を創ります。
+          サービス業のパフォーマンスをテクノロジーで最大化します。
         </p>
       </div>
     </div>

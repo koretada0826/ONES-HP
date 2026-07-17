@@ -42,7 +42,7 @@ export default function CasePage() {
       <section className="relative pb-16 pt-8 md:pb-24 md:pt-10">
         <div className="mx-auto max-w-[1440px] px-6 md:px-10">
           <div className="chip">TRACK RECORD</div>
-          <h2 className="mt-5 text-3xl font-black leading-[1.2] text-white md:text-5xl">
+          <h2 className="mt-5 text-3xl font-black leading-[1.2] text-ink-950 md:text-5xl">
             ONESのご支援実績
           </h2>
           <div className="mt-8 h-px w-16 bg-[#c4897a]" />
@@ -65,7 +65,7 @@ export default function CasePage() {
                   onMouseLeave={() => setCursor("default")}
                   className={`relative overflow-hidden rounded-full border px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] transition-colors duration-300 ${
                     active
-                      ? "border-copper-600 bg-copper-500 text-white"
+                      ? "border-copper-600 bg-copper-500 text-ink-950"
                       : "border-black/25 bg-transparent text-ink-950/80 hover:border-copper-500 hover:text-[#c4897a]"
                   }`}
                 >
@@ -114,7 +114,7 @@ export default function CasePage() {
                       style={{ filter: "grayscale(0.15) contrast(1.05) sepia(0.12)" }}
                     />
                     <div className="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/40 to-transparent" />
-                    <div className="pointer-events-none absolute left-3 top-3 border border-copper-200/80 bg-copper-500/85 px-2 py-0.5 font-display text-[9px] uppercase tracking-[0.28em] text-white backdrop-blur">
+                    <div className="pointer-events-none absolute left-3 top-3 border border-copper-200/80 bg-copper-500/85 px-2 py-0.5 font-display text-[9px] uppercase tracking-[0.28em] text-ink-950 backdrop-blur">
                       {c.category}
                     </div>
                   </div>
@@ -127,7 +127,7 @@ export default function CasePage() {
                     <div className="mt-4 text-[13px] tracking-[0.05em] text-ink-950/70">
                       {c.subtitle}
                     </div>
-                    <h3 className="mt-2 text-[16px] font-bold leading-[1.5] tracking-[0.02em] text-white">
+                    <h3 className="mt-2 text-[16px] font-bold leading-[1.5] tracking-[0.02em] text-ink-950">
                       {c.title}
                     </h3>
                     <div className="mt-6 border-t border-black/12 pt-4 text-[10px] uppercase tracking-[0.32em] text-ink-950/55">
@@ -209,8 +209,8 @@ export default function CasePage() {
                   className="relative flex h-8 w-8 items-center justify-center"
                   aria-label="Close"
                 >
-                  <span className="absolute h-[1.5px] w-6 rotate-45 bg-white" />
-                  <span className="absolute h-[1.5px] w-6 -rotate-45 bg-white" />
+                  <span className="absolute h-[1.5px] w-6 rotate-45 bg-ink-950" />
+                  <span className="absolute h-[1.5px] w-6 -rotate-45 bg-ink-950" />
                 </button>
               </div>
 
@@ -232,7 +232,7 @@ export default function CasePage() {
                   <div className="mt-2 text-[13px] leading-[1.8] text-ink-950/80 md:text-[15px]">
                     {c.subtitle}
                   </div>
-                  <h2 className="mt-1 text-2xl font-black leading-[1.2] text-white md:text-4xl">
+                  <h2 className="mt-1 text-2xl font-black leading-[1.2] text-ink-950 md:text-4xl">
                     {c.title}
                   </h2>
                 </div>
@@ -244,7 +244,7 @@ export default function CasePage() {
                   <div className="text-[10px] font-bold uppercase tracking-[0.42em] text-ink-950/60">
                     クライアント
                   </div>
-                  <div className="mt-3 text-[14px] text-white">{c.client}</div>
+                  <div className="mt-3 text-[14px] text-ink-950">{c.client}</div>
                 </div>
 
                 <div className="mt-8 border-t border-black/12 pt-6">
@@ -286,7 +286,7 @@ export default function CasePage() {
                     href={COMPANY.contactFormUrl}
                     target="_blank"
                     rel="noopener"
-                    className="group relative inline-flex h-11 items-center gap-3 overflow-hidden border border-white bg-ink-950 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-white"
+                    className="group relative inline-flex h-11 items-center gap-3 overflow-hidden border border-white bg-ink-950 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-950"
                   >
                     <span className="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-copper-500 transition-transform duration-500 ease-out group-hover:scale-x-100" aria-hidden />
                     <span className="relative z-10">同じ課題を相談する</span>
@@ -294,7 +294,7 @@ export default function CasePage() {
                   </a>
                   <button
                     onClick={() => setOpenId(null)}
-                    className="inline-flex h-11 items-center gap-3 border border-black/25 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-950/80 transition hover:border-white hover:bg-white"
+                    className="inline-flex h-11 items-center gap-3 border border-black/25 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-950/80 transition hover:border-ink-950 hover:bg-ink-950 hover:text-white"
                   >
                     閉じる
                   </button>

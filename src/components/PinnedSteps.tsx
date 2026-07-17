@@ -134,7 +134,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
                       ? "bg-copper-500"
                       : i < activeIndex
                       ? "bg-copper-400/70"
-                      : "bg-white/15 group-hover:bg-copper-400/60"
+                      : "bg-ink-950/15 group-hover:bg-copper-400/60"
                   }`}
                 />
                 <div
@@ -164,7 +164,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
               <div className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-[#c4897a]">
                 {step.no}
               </div>
-              <h3 className="mt-4 text-[clamp(1.5rem,4vw,3rem)] font-black leading-[1.15] tracking-tight text-white md:whitespace-nowrap">
+              <h3 className="mt-4 text-[clamp(1.5rem,4vw,3rem)] font-black leading-[1.15] tracking-tight text-ink-950 md:whitespace-nowrap">
                 {step.title}
               </h3>
 

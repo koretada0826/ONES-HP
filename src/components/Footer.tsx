@@ -124,12 +124,12 @@ export default function Footer() {
       </div>
 
       <div ref={rulesRef} className="mx-auto mt-16 max-w-[1600px] space-y-4 px-6 md:px-10">
-        <hr className="h-px origin-left border-0 bg-white/15" style={{ transform: "scaleX(0)" }} />
+        <hr className="h-px origin-left border-0 bg-ink-950/15" style={{ transform: "scaleX(0)" }} />
         <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.32em] text-ink-950/50">
           <span>Copyright © {COMPANY.nameEn} All rights reserved.</span>
           <span>ONES MANAGEMENT</span>
         </div>
-        <hr className="h-px origin-left border-0 bg-white/15" style={{ transform: "scaleX(0)" }} />
+        <hr className="h-px origin-left border-0 bg-ink-950/15" style={{ transform: "scaleX(0)" }} />
       </div>
 
       {/* Giant outline text at bottom */}

@@ -113,7 +113,7 @@ export default function PageHero({ labelEn, ja, lead, image }: Props) {
         <div className="chip mb-6 md:mb-8">/ {labelEn}</div>
         <h1
           ref={enRef}
-          className="font-display font-black uppercase leading-[0.9] tracking-[-0.02em] text-white"
+          className="font-display font-black uppercase leading-[0.9] tracking-[-0.02em] text-ink-950"
           style={{ fontSize: "clamp(3.2rem, 11vw, 12rem)", perspective: "800px" }}
         >
           {Array.from(labelEn).map((c, i) => (
@@ -128,7 +128,7 @@ export default function PageHero({ labelEn, ja, lead, image }: Props) {
           <div className="overflow-hidden">
             <div
               data-line
-              className="inline-block whitespace-nowrap text-lg font-bold tracking-[0.14em] text-white md:text-2xl"
+              className="inline-block whitespace-nowrap text-lg font-bold tracking-[0.14em] text-ink-950 md:text-2xl"
             >
               {ja}
             </div>

@@ -106,7 +106,7 @@ export default function CustomCursor() {
         }}
       >
         {showLabel && (
-          <span className="whitespace-pre text-center text-[10px] uppercase tracking-[0.28em] text-white">
+          <span className="whitespace-pre text-center text-[10px] uppercase tracking-[0.28em] text-ink-950">
             {displayLabel}
           </span>
         )}

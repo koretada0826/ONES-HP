@@ -66,8 +66,8 @@ export default function ToolDetailModal({ feature, onClose }: Props) {
               className="relative flex h-9 w-9 items-center justify-center"
               aria-label="Close"
             >
-              <span className="absolute h-[1.5px] w-6 rotate-45 bg-white" />
-              <span className="absolute h-[1.5px] w-6 -rotate-45 bg-white" />
+              <span className="absolute h-[1.5px] w-6 rotate-45 bg-ink-950" />
+              <span className="absolute h-[1.5px] w-6 -rotate-45 bg-ink-950" />
             </button>
           </div>
 
@@ -90,7 +90,7 @@ export default function ToolDetailModal({ feature, onClose }: Props) {
             </motion.div>
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
             <div className="absolute inset-x-0 bottom-0 flex items-end justify-between px-6 pb-6 md:px-10 md:pb-10">
-              <h2 className="max-w-3xl text-2xl font-black leading-[1.15] text-white md:text-4xl">
+              <h2 className="max-w-3xl text-2xl font-black leading-[1.15] text-ink-950 md:text-4xl">
                 {feature.title}
               </h2>
               <span

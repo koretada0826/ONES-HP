@@ -118,7 +118,9 @@ export default function Header({ visible }: { visible: boolean }) {
                 rel={n.href.startsWith("http") ? "noopener" : undefined}
                 onMouseEnter={() => setCursor("open")}
                 onMouseLeave={() => setCursor("default")}
-                className="group relative overflow-hidden text-[11px] font-medium uppercase tracking-[0.32em] text-ink-950/80"
+                className={`group relative overflow-visible text-[11px] font-medium uppercase tracking-[0.32em] ${
+                  n.label === "AI" ? "text-[#c4897a]" : "text-ink-950/80"
+                }`}
               >
                 <span
                   ref={(el) => {
@@ -128,6 +130,11 @@ export default function Header({ visible }: { visible: boolean }) {
                 >
                   {n.label}
                 </span>
+                {n.label === "AI" && (
+                  <span className="absolute -right-6 -top-2 rounded-full bg-[#c4897a] px-1.5 py-0.5 text-[7px] font-bold uppercase tracking-[0.15em] text-white">
+                    NEW
+                  </span>
+                )}
                 <span className="pointer-events-none absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-ink-950 transition-transform duration-500 group-hover:origin-left group-hover:scale-x-100" />
               </a>
             ))}
@@ -141,7 +148,7 @@ export default function Header({ visible }: { visible: boolean }) {
               href="#contact"
               onMouseEnter={() => setCursor("open")}
               onMouseLeave={() => setCursor("default")}
-              className="group relative hidden h-11 items-center gap-3 overflow-hidden rounded-full px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-white md:inline-flex"
+              className="group relative hidden h-11 items-center gap-3 overflow-hidden rounded-full px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-950 md:inline-flex"
             >
               <svg
                 className="absolute inset-0 h-full w-full"
@@ -252,7 +259,7 @@ export default function Header({ visible }: { visible: boolean }) {
                       onClick={() => setMenuOpen(false)}
                       className="flex items-baseline justify-between py-6"
                     >
-                      <span className="font-display text-3xl font-black tracking-tight text-white">
+                      <span className="font-display text-3xl font-black tracking-tight text-ink-950">
                         {n.label}
                       </span>
                       <span className="text-xs uppercase tracking-[0.32em] text-ink-950/50">

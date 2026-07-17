@@ -36,23 +36,23 @@ export default function HomePage() {
         <main>
           <HeroSection visible={loaded} />
           <Marquee
-            items={["CREATING THE FUTURE", "SERVICE INDUSTRY", "ONES MANAGEMENT"]}
+            items={["AI × DIGITAL", "AUTOMATION", "CHATBOT", "WEB", "LP", "DX"]}
             size="xl"
-            outline
-          />
-          <ServiceSection />
-          <Marquee
-            items={["AI", "AUTOMATION", "CHATBOT", "WEB", "LP", "DX"]}
-            size="lg"
-            reverse
-            duration={95}
             outline
           />
           <AiSummarySection />
           <Marquee
+            items={["CREATING THE FUTURE", "SERVICE INDUSTRY", "ONES MANAGEMENT"]}
+            size="lg"
+            reverse
+            duration={95}
+          />
+          <ServiceSection />
+          <Marquee
             items={["BEAUTY", "FITNESS", "HOSPITALITY", "WELFARE"]}
             size="lg"
             duration={90}
+            outline
           />
           <TrackRecordSection />
           <Marquee

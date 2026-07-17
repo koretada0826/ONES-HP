@@ -55,7 +55,7 @@ export default function CompanyPage() {
           {/* Left: label + huge title */}
           <div>
             <div className="chip">{COMPANY_PAGE.mission.labelEn}</div>
-            <h2 className="mt-5 font-display text-[clamp(2.6rem,10vw,7rem)] font-black uppercase leading-none tracking-tight text-white">
+            <h2 className="mt-5 font-display text-[clamp(2.6rem,10vw,7rem)] font-black uppercase leading-none tracking-tight text-ink-950">
               {COMPANY_PAGE.mission.title}
             </h2>
             <div className="mt-6 h-px w-16 bg-[#c4897a]" />
@@ -82,7 +82,7 @@ export default function CompanyPage() {
               01
             </div>
             <div className="chip mb-6">CORE PURPOSE</div>
-            <div className="whitespace-pre-line text-2xl font-semibold leading-[1.85] tracking-[0.06em] text-white md:text-4xl">
+            <div className="whitespace-pre-line text-2xl font-semibold leading-[1.85] tracking-[0.06em] text-ink-950 md:text-4xl">
               {COMPANY_PAGE.mission.copy}
             </div>
             <p className="mt-8 border-t border-black/12 pt-6 text-[13px] leading-[2] text-ink-950/65">
@@ -159,7 +159,7 @@ export default function CompanyPage() {
           <RotateHeadline
             as="h2"
             text="会社情報"
-            className="mt-5 text-4xl font-black text-white md:text-5xl"
+            className="mt-5 text-4xl font-black text-ink-950 md:text-5xl"
           />
           <div className="mt-8 h-px w-16 bg-[#c4897a]" />
 
@@ -172,7 +172,7 @@ export default function CompanyPage() {
                 <dt className="font-display text-[11px] font-bold uppercase tracking-[0.32em] text-ink-950/60">
                   {row.label}
                 </dt>
-                <dd className="whitespace-pre-line text-[14px] leading-[1.95] text-white">
+                <dd className="whitespace-pre-line text-[14px] leading-[1.95] text-ink-950">
                   {row.value}
                 </dd>
               </div>

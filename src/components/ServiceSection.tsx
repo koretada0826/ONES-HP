@@ -55,7 +55,7 @@ export default function ServiceSection() {
             <div className="relative mt-5 inline-block self-start">
               <h2
                 ref={titleRef}
-                className="text-[clamp(1.9rem,3.6vw,3rem)] font-black leading-[1.1] tracking-tight text-white"
+                className="text-[clamp(1.9rem,3.6vw,3rem)] font-black leading-[1.1] tracking-tight text-ink-950"
                 style={{ opacity: 0 }}
               >
                 {MAIN_SERVICE.headline}
@@ -76,7 +76,7 @@ export default function ServiceSection() {
 
             {/* Service name block — thin divider */}
             <div className="mt-12 border-t border-black/12 pt-8">
-              <p className="text-lg font-bold tracking-[0.05em] text-white md:text-xl">
+              <p className="text-lg font-bold tracking-[0.05em] text-ink-950 md:text-xl">
                 {MAIN_SERVICE.title}
               </p>
               <p className="mt-2 text-xs tracking-[0.14em] text-ink-950/60">
@@ -152,7 +152,7 @@ export default function ServiceSection() {
           <div className="chip mb-6">{SUB_SERVICE.labelEn}</div>
           <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-16">
             <div>
-              <h3 className="text-[clamp(1.75rem,3vw,2.6rem)] font-black leading-[1.05] tracking-tight text-white">
+              <h3 className="text-[clamp(1.75rem,3vw,2.6rem)] font-black leading-[1.05] tracking-tight text-ink-950">
                 {SUB_SERVICE.title}
               </h3>
               <p className="mt-3 text-sm tracking-[0.14em] text-ink-950/65">
@@ -187,7 +187,7 @@ export default function ServiceSection() {
           <div className="chip mb-6">{AI_SERVICE.labelEn}</div>
           <div className="grid gap-10 md:grid-cols-[1.1fr_1fr] md:items-start md:gap-16">
             <div>
-              <h3 className="text-[clamp(1.75rem,3vw,2.6rem)] font-black leading-[1.05] tracking-tight text-white">
+              <h3 className="text-[clamp(1.75rem,3vw,2.6rem)] font-black leading-[1.05] tracking-tight text-ink-950">
                 {AI_SERVICE.title}
               </h3>
               <p className="mt-3 text-sm tracking-[0.14em] text-ink-950/65">
@@ -224,7 +224,7 @@ export default function ServiceSection() {
                     <div className="text-[10px] font-bold uppercase tracking-[0.32em] text-ink-950/55">
                       {item.subtag}
                     </div>
-                    <div className="mt-1 text-[15px] font-bold leading-[1.5] text-white">
+                    <div className="mt-1 text-[15px] font-bold leading-[1.5] text-ink-950">
                       {item.title}
                     </div>
                     <p className="mt-2 text-[12px] leading-[1.9] text-ink-950/70">

@@ -114,7 +114,7 @@ export default function AboutSection() {
           <div className="chip">ABOUT US</div>
           <h2
             ref={titleRef}
-            className="max-w-4xl text-[clamp(2rem,4vw,3.6rem)] font-black leading-[1.15] tracking-tight text-white"
+            className="max-w-4xl text-[clamp(2rem,4vw,3.6rem)] font-black leading-[1.15] tracking-tight text-ink-950"
           >
             <span className="block overflow-hidden">
               <span data-line className="inline-block">
@@ -181,7 +181,7 @@ export default function AboutSection() {
                     <span className="font-display text-[10px] font-bold uppercase tracking-[0.4em] text-[#c4897a]">
                       {v.en}
                     </span>
-                    <span className="text-[13px] font-bold tracking-[0.06em] text-white">
+                    <span className="text-[13px] font-bold tracking-[0.06em] text-ink-950">
                       {v.ja}
                     </span>
                   </div>

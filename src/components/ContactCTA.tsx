@@ -89,13 +89,13 @@ export default function ContactCTA() {
         <div className="relative w-full overflow-hidden">
           <div
             ref={line1Ref}
-            className="whitespace-nowrap text-[clamp(2.5rem,11vw,12rem)] font-black uppercase leading-[0.9] tracking-[-0.02em] text-white will-change-transform"
+            className="whitespace-nowrap text-[clamp(2.5rem,11vw,12rem)] font-black uppercase leading-[0.9] tracking-[-0.02em] text-ink-950 will-change-transform"
           >
             CREATING THE
           </div>
           <div
             ref={line2Ref}
-            className="whitespace-nowrap text-[clamp(2.5rem,11vw,12rem)] font-black uppercase leading-[0.9] tracking-[-0.02em] text-white will-change-transform"
+            className="whitespace-nowrap text-[clamp(2.5rem,11vw,12rem)] font-black uppercase leading-[0.9] tracking-[-0.02em] text-ink-950 will-change-transform"
           >
             FUTURE TOGETHER.
           </div>
@@ -117,7 +117,7 @@ export default function ContactCTA() {
           onMouseLeave={() => setCursor("default")}
           whileHover={{ scale: 1.15 }}
           transition={{ type: "spring", stiffness: 200, damping: 15 }}
-          className="group relative mt-12 flex h-32 w-32 items-center justify-center rounded-full border border-white/40 text-white transition-colors duration-500 hover:bg-white hover:text-ink-950 md:mt-14 md:h-40 md:w-40"
+          className="group relative mt-12 flex h-32 w-32 items-center justify-center rounded-full border border-ink-950/40 text-ink-950 transition-colors duration-500 hover:bg-ink-950 hover:text-white md:mt-14 md:h-40 md:w-40"
         >
           <span className="pointer-events-none absolute inset-0 rounded-full">
             <svg viewBox="0 0 160 160" className="h-full w-full">
@@ -155,7 +155,7 @@ export default function ContactCTA() {
           rel="noopener"
           onMouseEnter={() => setCursor("open")}
           onMouseLeave={() => setCursor("default")}
-          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#06C755] px-6 py-3 text-xs font-bold tracking-[0.14em] text-white shadow-[0_4px_20px_rgba(6,199,85,0.35)] transition hover:-translate-y-[2px] hover:shadow-[0_8px_28px_rgba(6,199,85,0.5)]"
+          className="mt-8 inline-flex items-center gap-2 rounded-full bg-[#06C755] px-6 py-3 text-xs font-bold tracking-[0.14em] text-ink-950 shadow-[0_4px_20px_rgba(6,199,85,0.35)] transition hover:-translate-y-[2px] hover:shadow-[0_8px_28px_rgba(6,199,85,0.5)]"
         >
           <svg viewBox="0 0 24 24" className="h-4 w-4 fill-white" aria-hidden>
             <path d="M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />

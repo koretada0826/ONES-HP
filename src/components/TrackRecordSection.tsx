@@ -68,7 +68,7 @@ export default function TrackRecordSection() {
           {/* Left: sticky text panel */}
           <div className="md:sticky md:top-24 md:h-fit">
             <div className="chip mb-4">OUR WORKS</div>
-            <h2 className="text-[clamp(2rem,3.4vw,3rem)] font-black leading-[1.1] text-white">
+            <h2 className="text-[clamp(2rem,3.4vw,3rem)] font-black leading-[1.1] text-ink-950">
               つくるのは、<br />成果。
             </h2>
             <div className="mt-6 h-px w-16 bg-[#c4897a]" />
@@ -82,7 +82,7 @@ export default function TrackRecordSection() {
               href="/case"
               onMouseEnter={() => setCursor("view", "VIEW")}
               onMouseLeave={() => setCursor("default")}
-              className="group mt-10 inline-flex items-center gap-3 border-b border-white/50 pb-1 font-display text-[11px] font-semibold uppercase tracking-[0.32em] text-white transition hover:border-[#c4897a] hover:text-[#c4897a]"
+              className="group mt-10 inline-flex items-center gap-3 border-b border-white/50 pb-1 font-display text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-950 transition hover:border-[#c4897a] hover:text-[#c4897a]"
             >
               VIEW ALL WORKS
               <span className="transition-transform duration-300 group-hover:translate-x-1">
@@ -136,7 +136,7 @@ export default function TrackRecordSection() {
 
                   {/* Bottom: label + items */}
                   <div className="absolute inset-x-5 bottom-5 z-10">
-                    <div className="mb-2 font-display text-[11px] font-bold uppercase tracking-[0.14em] text-white">
+                    <div className="mb-2 font-display text-[11px] font-bold uppercase tracking-[0.14em] text-ink-950">
                       {c.label}
                     </div>
                     <ul className="flex flex-col gap-1">
@@ -160,7 +160,7 @@ export default function TrackRecordSection() {
 
             {/* Progress line + counter */}
             <div className="mt-2 flex items-center gap-6 pr-6 md:pr-10">
-              <div className="h-px flex-1 bg-white/12">
+              <div className="h-px flex-1 bg-ink-950/12">
                 <div
                   className="h-full bg-[#c4897a] transition-all duration-500"
                   style={{

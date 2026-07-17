@@ -15,7 +15,7 @@ export default function NewsSection() {
         <div className="mb-14 flex items-end justify-between">
           <div>
             <div className="chip mb-4">NEWS &amp; TOPICS</div>
-            <h2 className="text-[clamp(2.2rem,4vw,3.6rem)] font-black leading-[1.1] text-white">
+            <h2 className="text-[clamp(2.2rem,4vw,3.6rem)] font-black leading-[1.1] text-ink-950">
               TOPICS
             </h2>
           </div>
@@ -49,7 +49,7 @@ export default function NewsSection() {
                 delay: i * 0.12,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className="group relative flex flex-col overflow-hidden border border-black/10 bg-white/70 backdrop-blur transition-[border-color,background-color,box-shadow] duration-500 hover:border-copper-400/60 hover:bg-white hover:shadow-[0_20px_60px_-20px_rgba(196,137,122,0.35)]"
+              className="group relative flex flex-col overflow-hidden border border-black/10 bg-ink-950/70 backdrop-blur transition-[border-color,background-color,box-shadow] duration-500 hover:border-copper-400/60 hover:bg-white hover:shadow-[0_20px_60px_-20px_rgba(196,137,122,0.35)]"
             >
               {/* Image */}
               <div className="relative aspect-[16/9] w-full overflow-hidden bg-ink-800">
@@ -71,7 +71,7 @@ export default function NewsSection() {
                   </span>
                   <span>{t.date}</span>
                 </div>
-                <h3 className="text-[15px] font-bold leading-[1.65] tracking-[0.02em] text-white">
+                <h3 className="text-[15px] font-bold leading-[1.65] tracking-[0.02em] text-ink-950">
                   {t.title}
                 </h3>
                 <p className="line-clamp-4 text-[12px] leading-[1.9] text-ink-950/65">

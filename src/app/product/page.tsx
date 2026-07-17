@@ -43,12 +43,12 @@ export default function ProductPage() {
           <RotateHeadline
             as="h2"
             text={PRODUCT_PAGE.main.title}
-            className="mt-5 text-4xl font-black leading-[1.1] text-white md:text-6xl"
+            className="mt-5 text-4xl font-black leading-[1.1] text-ink-950 md:text-6xl"
           />
           <div className="mt-8 h-px w-16 bg-[#c4897a]" />
 
           <div className="mt-12 grid gap-6 md:grid-cols-[1fr_1.4fr] md:gap-16">
-            <p className="text-xl font-bold leading-[1.7] text-white md:text-2xl">
+            <p className="text-xl font-bold leading-[1.7] text-ink-950 md:text-2xl">
               {PRODUCT_PAGE.main.tag}
             </p>
             <p className="text-[14px] leading-[2.1] text-ink-950/65">
@@ -116,7 +116,7 @@ export default function ProductPage() {
       <section ref={toolRef} className="relative py-24 md:py-36">
         <div className="mx-auto max-w-[1440px] px-6 md:px-10">
           <div className="chip">{PRODUCT_PAGE.tool.labelEn}</div>
-          <h2 className="mt-5 text-4xl font-black leading-[1.1] text-white md:text-6xl">
+          <h2 className="mt-5 text-4xl font-black leading-[1.1] text-ink-950 md:text-6xl">
             {PRODUCT_PAGE.tool.title}
           </h2>
           <div className="mt-8 h-px w-16 bg-[#c4897a]" />
@@ -172,7 +172,7 @@ export default function ProductPage() {
                   <div className="mt-4 text-[11px] font-bold uppercase tracking-[0.24em] text-ink-950/65">
                     {f.subtag}
                   </div>
-                  <h3 className="mt-6 text-lg font-bold leading-[1.55] text-white">
+                  <h3 className="mt-6 text-lg font-bold leading-[1.55] text-ink-950">
                     {f.title}
                   </h3>
                   <div className="mt-8 flex items-center justify-between border-t border-black/12 pt-5 text-[10px] uppercase tracking-[0.32em] text-ink-950/70 transition-colors group-hover:text-[#c4897a]">
@@ -204,12 +204,12 @@ export default function ProductPage() {
           <RotateHeadline
             as="h2"
             text={AI_SERVICE.title}
-            className="mt-5 text-4xl font-black leading-[1.1] text-white md:text-6xl"
+            className="mt-5 text-4xl font-black leading-[1.1] text-ink-950 md:text-6xl"
           />
           <div className="mt-8 h-px w-16 bg-copper-500" />
 
           <div className="mt-12 grid gap-6 md:grid-cols-[1fr_1.4fr] md:gap-16">
-            <p className="text-xl font-bold leading-[1.7] text-white md:text-2xl">
+            <p className="text-xl font-bold leading-[1.7] text-ink-950 md:text-2xl">
               {AI_SERVICE.headline}
             </p>
             <p className="text-[14px] leading-[2.1] text-ink-950/65">
@@ -252,7 +252,7 @@ export default function ProductPage() {
                   <div className="mt-4 text-[11px] font-bold uppercase tracking-[0.24em] text-ink-950/65">
                     {item.subtag}
                   </div>
-                  <h3 className="mt-5 text-lg font-bold leading-[1.5] text-white">
+                  <h3 className="mt-5 text-lg font-bold leading-[1.5] text-ink-950">
                     {item.title}
                   </h3>
                   <p className="mt-5 border-t border-black/12 pt-4 text-[13px] leading-[2] text-ink-950/70">
