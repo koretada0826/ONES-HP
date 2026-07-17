@@ -109,7 +109,7 @@ export default function ProductPage() {
         items={["CREATE", "DESIGN", "CUSTOMIZE", "OPTIMIZE"]}
         size="lg"
         reverse
-        duration={36}
+        duration={100}
       />
 
       {/* TOOL DETAIL — clickable cards */}
@@ -194,7 +194,7 @@ export default function ProductPage() {
         items={["AI", "AUTOMATION", "CHATBOT", "LP", "WEB", "DX"]}
         size="xl"
         outline
-        duration={34}
+        duration={95}
       />
 
       {/* AI × DIGITAL SOLUTIONS */}

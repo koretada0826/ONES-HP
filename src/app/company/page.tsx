@@ -145,7 +145,7 @@ export default function CompanyPage() {
         items={["SINCE 2023", "STORE MANAGEMENT", "ONES INC.", "SHIZUOKA — TOKYO"]}
         size="lg"
         reverse
-        duration={36}
+        duration={100}
       />
 
       {/* PROFILE */}

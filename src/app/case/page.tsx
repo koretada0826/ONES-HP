@@ -161,7 +161,7 @@ export default function CasePage() {
         items={["TRACK RECORD", "REAL SUPPORT", "STANDARDIZATION", "GROWTH"]}
         size="lg"
         reverse
-        duration={36}
+        duration={100}
       />
 
       <CtaBlock
