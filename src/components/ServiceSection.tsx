@@ -62,7 +62,7 @@ export default function ServiceSection() {
               </h2>
               <div
                 ref={titleMaskRef}
-                className="pointer-events-none absolute inset-0 bg-ink-950"
+                className="pointer-events-none absolute inset-0 bg-[#050507]"
                 style={{ transform: "scaleX(0)", transformOrigin: "left center" }}
                 aria-hidden
               />
@@ -99,7 +99,7 @@ export default function ServiceSection() {
                   }}
                   className="relative border-t border-white/12 pt-4 pl-14 text-[13px] leading-[1.9] text-white/80"
                 >
-                  <span className="absolute left-0 top-4 font-display text-[10px] tracking-[0.4em] text-copper-600">
+                  <span className="absolute left-0 top-4 font-display text-[10px] tracking-[0.4em] text-copper-300">
                     0{i + 1}
                   </span>
                   「{c}」
@@ -113,7 +113,7 @@ export default function ServiceSection() {
 
             <a
               href="/product"
-              className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-700 transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
+              className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-300 transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
             >
               サービス詳細
               <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -199,7 +199,7 @@ export default function ServiceSection() {
               </p>
               <a
                 href="/product#ai"
-                className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-700 transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
+                className="group mt-8 inline-flex h-11 w-fit items-center gap-3 border border-copper-500/50 bg-transparent px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-300 transition hover:border-copper-600 hover:bg-copper-500 hover:text-white"
               >
                 AIサービス詳細
                 <span className="transition-transform group-hover:translate-x-1">→</span>
@@ -217,7 +217,7 @@ export default function ServiceSection() {
                   transition={{ duration: 0.7, delay: i * 0.07, ease: [0.22, 1, 0.36, 1] }}
                   className="group relative flex items-start gap-4 border-t border-white/12 pt-4"
                 >
-                  <span className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-copper-600 min-w-[3.4rem] pt-1">
+                  <span className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-copper-300 min-w-[3.4rem] pt-1">
                     {item.no}
                   </span>
                   <div className="flex-1">

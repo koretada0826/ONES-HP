@@ -44,13 +44,13 @@ export default function HomePage() {
             items={["BEAUTY", "FITNESS", "HOSPITALITY", "WELFARE"]}
             size="lg"
             reverse
-            duration={15}
+            duration={34}
           />
           <TrackRecordSection />
           <Marquee
             items={["ABOUT US", "SINCE 2023", "GLOBAL VIEW", "ON-SITE"]}
             size="lg"
-            duration={14}
+            duration={32}
             outline
           />
           <AboutSection />

@@ -127,7 +127,7 @@ export default function Header({ visible }: { visible: boolean }) {
                 >
                   {n.label}
                 </span>
-                <span className="pointer-events-none absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-ink-950 transition-transform duration-500 group-hover:origin-left group-hover:scale-x-100" />
+                <span className="pointer-events-none absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-white transition-transform duration-500 group-hover:origin-left group-hover:scale-x-100" />
               </a>
             ))}
           </nav>
@@ -156,16 +156,16 @@ export default function Header({ visible }: { visible: boolean }) {
                   rx="22"
                   ry="22"
                   fill="none"
-                  stroke="rgba(10,10,14,0.55)"
+                  stroke="rgba(255,255,255,0.55)"
                   strokeWidth="1"
                 />
               </svg>
               <span className="relative z-10 flex items-center gap-2">
                 <span
-                  className="pointer-events-none absolute inset-0 -z-10 scale-0 rounded-full bg-ink-950 transition-transform duration-500 ease-out group-hover:scale-[3]"
+                  className="pointer-events-none absolute inset-0 -z-10 scale-0 rounded-full bg-white transition-transform duration-500 ease-out group-hover:scale-[3]"
                   style={{ transformOrigin: "center" }}
                 />
-                <span className="relative z-10 transition-colors duration-300 group-hover:text-white">
+                <span className="relative z-10 transition-colors duration-300 group-hover:text-ink-950">
                   CONTACT
                 </span>
                 <span className="relative z-10 inline-flex h-4 w-4 items-center justify-center overflow-hidden transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
@@ -192,17 +192,17 @@ export default function Header({ visible }: { visible: boolean }) {
             >
               <span className="sr-only">Menu</span>
               <span
-                className={`absolute block h-[1.5px] w-6 bg-ink-950 transition-transform duration-300 ${
+                className={`absolute block h-[1.5px] w-6 bg-white transition-transform duration-300 ${
                   menuOpen ? "rotate-45" : "-translate-y-[6px]"
                 }`}
               />
               <span
-                className={`absolute block h-[1.5px] w-6 bg-ink-950 transition-opacity duration-200 ${
+                className={`absolute block h-[1.5px] w-6 bg-white transition-opacity duration-200 ${
                   menuOpen ? "opacity-0" : "opacity-100"
                 }`}
               />
               <span
-                className={`absolute block h-[1.5px] w-6 bg-ink-950 transition-transform duration-300 ${
+                className={`absolute block h-[1.5px] w-6 bg-white transition-transform duration-300 ${
                   menuOpen ? "-rotate-45" : "translate-y-[6px]"
                 }`}
               />
@@ -242,7 +242,7 @@ export default function Header({ visible }: { visible: boolean }) {
                       duration: 0.6,
                       ease: [0.22, 1, 0.36, 1],
                     }}
-                    className="overflow-hidden border-b border-black/10"
+                    className="overflow-hidden border-b border-white/10"
                   >
                     <a
                       href={n.href}

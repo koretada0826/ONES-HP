@@ -150,7 +150,7 @@ export default function AboutSection() {
             </div>
             {/* Corner label */}
             <div className="pointer-events-none absolute bottom-5 left-5 flex items-center gap-3">
-              <span className="h-px w-8 bg-white/[0.04]" />
+              <span className="h-px w-8 bg-white/70" />
               <span className="font-display text-[10px] uppercase tracking-[0.4em] text-white/85">
                 ONES MANAGEMENT
               </span>
@@ -178,7 +178,7 @@ export default function AboutSection() {
                   className="grid grid-cols-1 gap-2 py-6 md:grid-cols-[180px_1fr] md:gap-8"
                 >
                   <div className="flex flex-col gap-1">
-                    <span className="font-display text-[10px] font-bold uppercase tracking-[0.4em] text-copper-600">
+                    <span className="font-display text-[10px] font-bold uppercase tracking-[0.4em] text-copper-300">
                       {v.en}
                     </span>
                     <span className="text-[13px] font-bold tracking-[0.06em] text-white">
@@ -193,7 +193,7 @@ export default function AboutSection() {
             <div className="mt-10">
               <a
                 href="/company"
-                className="group relative inline-flex h-11 items-center gap-3 border border-copper-500/50 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-700 transition-colors duration-300 hover:border-copper-600 hover:bg-copper-500 hover:text-white"
+                className="group relative inline-flex h-11 items-center gap-3 border border-copper-500/50 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-300 transition-colors duration-300 hover:border-copper-600 hover:bg-copper-500 hover:text-white"
               >
                 会社詳細
                 <span className="transition-transform duration-300 group-hover:translate-x-1">

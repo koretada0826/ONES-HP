@@ -112,7 +112,7 @@ export default function Footer() {
                 href={l.href}
                 onMouseEnter={() => setCursor("open")}
                 onMouseLeave={() => setCursor("default")}
-                className="transition-colors hover:text-copper-600"
+                className="transition-colors hover:text-copper-300"
               >
                 {l.label}
               </a>

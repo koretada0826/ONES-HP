@@ -22,7 +22,7 @@ const SIZE: Record<NonNullable<Props["size"]>, string> = {
 export default function Marquee({
   items,
   reverse,
-  duration = 14,
+  duration = 32,
   size = "lg",
   outline = false,
   color = "#0a0a0e",

@@ -66,8 +66,8 @@ export default function ToolDetailModal({ feature, onClose }: Props) {
               className="relative flex h-9 w-9 items-center justify-center"
               aria-label="Close"
             >
-              <span className="absolute h-[1.5px] w-6 rotate-45 bg-ink-950" />
-              <span className="absolute h-[1.5px] w-6 -rotate-45 bg-ink-950" />
+              <span className="absolute h-[1.5px] w-6 rotate-45 bg-white" />
+              <span className="absolute h-[1.5px] w-6 -rotate-45 bg-white" />
             </button>
           </div>
 

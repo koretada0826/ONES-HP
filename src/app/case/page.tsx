@@ -66,7 +66,7 @@ export default function CasePage() {
                   className={`relative overflow-hidden rounded-full border px-4 py-2 text-[10px] font-semibold uppercase tracking-[0.28em] transition-colors duration-300 ${
                     active
                       ? "border-copper-600 bg-copper-500 text-white"
-                      : "border-white/25 bg-transparent text-white/85 hover:border-copper-500 hover:text-copper-700"
+                      : "border-white/25 bg-transparent text-white/85 hover:border-copper-500 hover:text-copper-300"
                   }`}
                 >
                   {c}
@@ -122,7 +122,7 @@ export default function CasePage() {
                   <div className="flex flex-1 flex-col p-6 md:p-7">
                     <div className="flex w-full items-center justify-between font-display text-[10px] uppercase tracking-[0.42em] text-white/50">
                       <span>{c.industry}</span>
-                      <span className="text-copper-600">0{i + 1}</span>
+                      <span className="text-copper-300">0{i + 1}</span>
                     </div>
                     <div className="mt-4 text-[13px] tracking-[0.05em] text-white/75">
                       {c.subtitle}
@@ -161,7 +161,7 @@ export default function CasePage() {
         items={["TRACK RECORD", "REAL SUPPORT", "STANDARDIZATION", "GROWTH"]}
         size="lg"
         reverse
-        duration={16}
+        duration={36}
       />
 
       <CtaBlock
@@ -209,8 +209,8 @@ export default function CasePage() {
                   className="relative flex h-8 w-8 items-center justify-center"
                   aria-label="Close"
                 >
-                  <span className="absolute h-[1.5px] w-6 rotate-45 bg-ink-950" />
-                  <span className="absolute h-[1.5px] w-6 -rotate-45 bg-ink-950" />
+                  <span className="absolute h-[1.5px] w-6 rotate-45 bg-white" />
+                  <span className="absolute h-[1.5px] w-6 -rotate-45 bg-white" />
                 </button>
               </div>
 
@@ -294,7 +294,7 @@ export default function CasePage() {
                   </a>
                   <button
                     onClick={() => setOpenId(null)}
-                    className="inline-flex h-11 items-center gap-3 border border-copper-500/40 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-copper-700 transition hover:border-copper-600 hover:bg-copper-50"
+                    className="inline-flex h-11 items-center gap-3 border border-white/25 px-5 text-[11px] font-semibold uppercase tracking-[0.32em] text-white/85 transition hover:border-white hover:bg-white/[0.06]"
                   >
                     閉じる
                   </button>

@@ -55,7 +55,7 @@ export default function CompanyPage() {
           {/* Left: label + huge title */}
           <div>
             <div className="chip">{COMPANY_PAGE.mission.labelEn}</div>
-            <h2 className="mt-5 font-display text-5xl font-black uppercase tracking-tight text-white md:text-8xl">
+            <h2 className="mt-5 font-display text-[clamp(2.6rem,10vw,7rem)] font-black uppercase leading-none tracking-tight text-white">
               {COMPANY_PAGE.mission.title}
             </h2>
             <div className="mt-6 h-px w-16 bg-[#c4897a]" />
@@ -145,7 +145,7 @@ export default function CompanyPage() {
         items={["SINCE 2023", "STORE MANAGEMENT", "ONES INC.", "SHIZUOKA — TOKYO"]}
         size="lg"
         reverse
-        duration={16}
+        duration={36}
       />
 
       {/* PROFILE */}

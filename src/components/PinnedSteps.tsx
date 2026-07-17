@@ -107,7 +107,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
             </div>
 
             <div className="absolute bottom-5 left-5 flex items-center gap-3">
-              <span className="h-px w-8 bg-white/[0.04]" />
+              <span className="h-px w-8 bg-white/70" />
               <span className="font-display text-[10px] uppercase tracking-[0.42em] text-white/85">
                 {active.no}
               </span>
@@ -134,12 +134,12 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
                       ? "bg-copper-500"
                       : i < activeIndex
                       ? "bg-copper-400/70"
-                      : "bg-ink-950/15 group-hover:bg-copper-400/60"
+                      : "bg-white/15 group-hover:bg-copper-400/60"
                   }`}
                 />
                 <div
                   className={`font-display text-[10px] uppercase tracking-[0.32em] transition-colors duration-500 ${
-                    i === activeIndex ? "text-copper-600" : "text-white/45"
+                    i === activeIndex ? "text-copper-300" : "text-white/45"
                   }`}
                 >
                   {s.no}
@@ -164,7 +164,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
               <div className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-[#c4897a]">
                 {step.no}
               </div>
-              <h3 className="mt-4 whitespace-nowrap text-[clamp(1.75rem,4vw,3rem)] font-black leading-[1.1] tracking-tight text-white">
+              <h3 className="mt-4 text-[clamp(1.5rem,4vw,3rem)] font-black leading-[1.15] tracking-tight text-white md:whitespace-nowrap">
                 {step.title}
               </h3>
 
@@ -177,7 +177,7 @@ export default function PinnedSteps({ steps, sectionLabel }: Props) {
                 <div className="mt-8 flex flex-wrap gap-2">
                   {step.keywords.map((k, ki) => (
                     <StampReveal key={k} index={i * 10 + ki}>
-                      <span className="inline-block border border-copper-300/60 bg-copper-50/60 px-3 py-1.5 font-display text-[10px] uppercase tracking-[0.24em] text-copper-700 backdrop-blur transition-colors duration-300 hover:border-copper-600 hover:bg-copper-600 hover:text-white">
+                      <span className="inline-block border border-copper-300/60 bg-copper-50/60 px-3 py-1.5 font-display text-[10px] uppercase tracking-[0.24em] text-copper-300 backdrop-blur transition-colors duration-300 hover:border-copper-600 hover:bg-copper-600 hover:text-white">
                         {k}
                       </span>
                     </StampReveal>

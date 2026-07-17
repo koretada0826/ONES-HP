@@ -87,10 +87,10 @@ export default function CtaBlock({
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-10% 0px" }}
             transition={{ duration: 0.9, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            className="group relative inline-flex h-12 items-center gap-3 overflow-hidden border border-white/40 bg-transparent px-6 text-[11px] font-semibold uppercase tracking-[0.32em] text-white transition-colors duration-500 hover:border-white hover:bg-white hover:text-ink-950"
+            className="group relative inline-flex h-12 items-center gap-3 overflow-hidden border border-white/40 bg-transparent px-6 text-[11px] font-semibold uppercase tracking-[0.32em] text-white transition-colors duration-500 hover:border-white hover:text-ink-950"
           >
             <span
-              className="pointer-events-none absolute inset-0 origin-right scale-x-0 bg-ink-950 transition-transform duration-500 ease-out group-hover:origin-left group-hover:scale-x-100"
+              className="pointer-events-none absolute inset-0 origin-right scale-x-0 bg-white transition-transform duration-500 ease-out group-hover:origin-left group-hover:scale-x-100"
               aria-hidden
             />
             <svg viewBox="0 0 24 24" className="relative z-10 h-4 w-4 fill-current" aria-hidden>

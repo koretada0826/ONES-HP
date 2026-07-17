@@ -109,7 +109,7 @@ export default function ProductPage() {
         items={["CREATE", "DESIGN", "CUSTOMIZE", "OPTIMIZE"]}
         size="lg"
         reverse
-        duration={16}
+        duration={36}
       />
 
       {/* TOOL DETAIL — clickable cards */}
@@ -175,9 +175,9 @@ export default function ProductPage() {
                   <h3 className="mt-6 text-lg font-bold leading-[1.55] text-white">
                     {f.title}
                   </h3>
-                  <div className="mt-8 flex items-center justify-between border-t border-white/12 pt-5 text-[10px] uppercase tracking-[0.32em] text-white/75 transition-colors group-hover:text-copper-700">
+                  <div className="mt-8 flex items-center justify-between border-t border-white/12 pt-5 text-[10px] uppercase tracking-[0.32em] text-white/75 transition-colors group-hover:text-copper-300">
                     <span>詳細を見る</span>
-                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-copper-500/60 text-copper-600 transition-transform duration-500 group-hover:rotate-45 group-hover:border-copper-600">
+                    <span className="inline-flex h-6 w-6 items-center justify-center rounded-full border border-copper-500/60 text-copper-300 transition-transform duration-500 group-hover:rotate-45 group-hover:border-copper-600">
                       +
                     </span>
                   </div>
@@ -194,7 +194,7 @@ export default function ProductPage() {
         items={["AI", "AUTOMATION", "CHATBOT", "LP", "WEB", "DX"]}
         size="xl"
         outline
-        duration={15}
+        duration={34}
       />
 
       {/* AI × DIGITAL SOLUTIONS */}
@@ -246,7 +246,7 @@ export default function ProductPage() {
                 </div>
 
                 <div className="relative z-10 flex flex-1 flex-col">
-                  <div className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-copper-600">
+                  <div className="font-display text-[10px] font-bold uppercase tracking-[0.42em] text-copper-300">
                     {item.no}
                   </div>
                   <div className="mt-4 text-[11px] font-bold uppercase tracking-[0.24em] text-white/65">
