@@ -10,6 +10,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import Marquee from "@/components/Marquee";
 import ServiceSection from "@/components/ServiceSection";
+import AiSummarySection from "@/components/AiSummarySection";
 import TrackRecordSection from "@/components/TrackRecordSection";
 import AboutSection from "@/components/AboutSection";
 import NewsSection from "@/components/NewsSection";
@@ -41,10 +42,17 @@ export default function HomePage() {
           />
           <ServiceSection />
           <Marquee
-            items={["BEAUTY", "FITNESS", "HOSPITALITY", "WELFARE"]}
+            items={["AI", "AUTOMATION", "CHATBOT", "WEB", "LP", "DX"]}
             size="lg"
             reverse
             duration={95}
+            outline
+          />
+          <AiSummarySection />
+          <Marquee
+            items={["BEAUTY", "FITNESS", "HOSPITALITY", "WELFARE"]}
+            size="lg"
+            duration={90}
           />
           <TrackRecordSection />
           <Marquee

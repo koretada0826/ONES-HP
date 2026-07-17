@@ -104,6 +104,7 @@ export default function Footer() {
             { label: "TOP", href: "/" },
             { label: "COMPANY", href: "/company" },
             { label: "SERVICE", href: "/product" },
+            { label: "AI", href: "/ai" },
             { label: "CASE", href: "/case" },
             { label: "CONTACT", href: "/#contact" },
           ].map((l) => (
