@@ -20,10 +20,10 @@ body {
   background: var(--bg);
   color: var(--fg);
   font-feature-settings: "palt";
+  overflow-x: clip;
 }
 
 body {
-  overflow-x: clip;
   font-family: var(--font-jp), var(--font-display), sans-serif;
   cursor: none;
 }

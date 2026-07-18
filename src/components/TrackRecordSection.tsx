@@ -62,7 +62,7 @@ export default function TrackRecordSection() {
   }, []);
 
   return (
-    <section id="track-record" className="relative py-24 md:py-32">
+    <section id="track-record" className="relative overflow-hidden py-24 md:py-32">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <div className="grid gap-14 md:grid-cols-[380px_1fr] md:items-start md:gap-20">
           {/* Left: sticky text panel */}
