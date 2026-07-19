@@ -17,7 +17,8 @@ export default function LoadingScreen({ onDone }: { onDone: () => void }) {
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-    if (reduced) {
+    const alreadySeen = sessionStorage.getItem("onesmg_intro") === "1";
+    if (reduced || alreadySeen) {
       setVisible(false);
       onDone();
       return;
@@ -43,6 +44,9 @@ export default function LoadingScreen({ onDone }: { onDone: () => void }) {
     // Dash line sweep, then fade out root and hand off to the site
     const tl = gsap.timeline({
       onComplete: () => {
+        try {
+          sessionStorage.setItem("onesmg_intro", "1");
+        } catch {}
         setVisible(false);
         onDone();
       },
