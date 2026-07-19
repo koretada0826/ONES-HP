@@ -96,8 +96,8 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
   }, [scrollProgress]);
 
   return (
-    <div ref={rootRef} className="relative z-10 max-w-[720px]">
-      <div className="chip mb-6 md:mb-8">多種多様なサービス事業者様へ</div>
+    <div ref={rootRef} className="relative z-10 max-w-[820px]">
+      <div className="chip mb-6 md:mb-8">AI × DIGITAL SOLUTIONS</div>
 
       <h1 className="font-display font-black uppercase leading-[0.92] tracking-[-0.01em] text-ink-950">
         <span className="block overflow-hidden pb-2">
@@ -105,7 +105,7 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
             ref={line1Ref}
             className="inline-block will-change-transform text-[clamp(2.6rem,9vw,9rem)]"
           >
-            CREATING
+            EVOLVE
           </span>
         </span>
         <span className="block overflow-hidden pb-2">
@@ -113,7 +113,7 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
             ref={line2Ref}
             className="inline-block will-change-transform text-[clamp(2.6rem,9vw,9rem)]"
           >
-            THE
+            YOUR
           </span>
         </span>
         <span className="block overflow-hidden pb-2">
@@ -121,7 +121,7 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
             ref={line3Ref}
             className="inline-block will-change-transform text-[clamp(2.6rem,9vw,9rem)]"
           >
-            FUTURE
+            BUSINESS
             <span ref={dotRef} className="text-[#c4897a]">
               .
             </span>
@@ -130,33 +130,53 @@ export default function HeroTypography({ visible, scrollProgress }: Props) {
       </h1>
 
       <p className="mt-5 font-display text-xs uppercase tracking-[0.28em] text-ink-950/55">
-        of the SERVICE INDUSTRY — <span className="text-[#c4897a]">POWERED BY AI</span>
+        AI × DIGITAL — <span className="text-[#c4897a]">FOR THE SERVICE INDUSTRY</span>
       </p>
 
       <div ref={jaRef} className="mt-6 overflow-visible md:mt-8">
         <div className="overflow-hidden">
           <div className="text-base font-semibold tracking-[0.12em] text-ink-950 md:text-2xl">
-            サービス業の未来を創る。
+            AIの力で、現場の生産性を最大化する。
           </div>
         </div>
         <div className="overflow-hidden">
           <div className="text-base font-semibold tracking-[0.12em] text-ink-950 md:text-2xl">
-            人が生み出す価値の最大化。
+            サービス業のためのデジタル伴走型パートナー。
           </div>
         </div>
       </div>
 
       <div
         ref={descRef}
-        className="mt-6 max-w-[520px] border-t border-black/15 pt-5 text-[12px] leading-[1.95] text-ink-950/65 md:mt-8 md:pt-6 md:text-[13px] md:leading-[2]"
+        className="mt-6 max-w-[560px] border-t border-black/15 pt-5 text-[12px] leading-[1.95] text-ink-950/65 md:mt-8 md:pt-6 md:text-[13px] md:leading-[2]"
       >
         <p>
-          店舗経営・運営サポートに加え、AI・デジタル技術を活用した
-          <span className="font-semibold text-ink-950">HP / LP 制作、業務効率化ツール、AIチャットボット</span>
-          で、
+          <span className="font-semibold text-ink-950">HP / LP 制作・業務効率化ツール・AIチャットボット・DX支援</span>
+          を、
           <br className="hidden md:inline" />
-          サービス業のパフォーマンスをテクノロジーで最大化します。
+          事業と現場を理解した上でオーダーメイドで設計。導入後の改善まで一気通貫で伴走します。
         </p>
+      </div>
+
+      <div className="mt-8 flex flex-wrap gap-3 md:mt-10">
+        <a
+          href="#contact"
+          className="group relative inline-flex h-12 items-center gap-3 overflow-hidden border border-ink-950 bg-ink-950 px-6 text-[11px] font-semibold uppercase tracking-[0.32em] text-white"
+        >
+          <span
+            className="pointer-events-none absolute inset-0 origin-left scale-x-0 bg-[#c4897a] transition-transform duration-500 ease-out group-hover:scale-x-100"
+            aria-hidden
+          />
+          <span className="relative z-10">無料相談はこちら</span>
+          <span className="relative z-10">→</span>
+        </a>
+        <a
+          href="#services"
+          className="inline-flex h-12 items-center gap-3 border border-ink-950/40 px-6 text-[11px] font-semibold uppercase tracking-[0.32em] text-ink-950 transition hover:border-ink-950"
+        >
+          サービス詳細を見る
+          <span>↓</span>
+        </a>
       </div>
     </div>
   );

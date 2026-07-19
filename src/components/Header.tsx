@@ -9,12 +9,13 @@ import { useMagneticButton } from "@/hooks/useMagneticButton";
 import { IMAGES } from "@/lib/data";
 
 const NAV = [
-  { label: "HOME", href: "/" },
-  { label: "COMPANY", href: "/company" },
-  { label: "SERVICE", href: "/product" },
-  { label: "AI", href: "/ai" },
-  { label: "CASE", href: "/case" },
-  { label: "CONTACT", href: "/#contact" },
+  { label: "TOP", href: "#home" },
+  { label: "CHALLENGES", href: "#problem" },
+  { label: "SERVICES", href: "#services" },
+  { label: "FLOW", href: "#flow" },
+  { label: "FAQ", href: "#faq" },
+  { label: "CONTACT", href: "#contact" },
+  { label: "コーポレートサイト", href: "/design1" },
 ];
 
 export default function Header({ visible }: { visible: boolean }) {
@@ -119,7 +120,9 @@ export default function Header({ visible }: { visible: boolean }) {
                 onMouseEnter={() => setCursor("open")}
                 onMouseLeave={() => setCursor("default")}
                 className={`group relative overflow-visible text-[11px] font-medium uppercase tracking-[0.32em] ${
-                  n.label === "AI" ? "text-[#c4897a]" : "text-ink-950/80"
+                  n.label === "コーポレートサイト"
+                    ? "text-[10px] text-ink-950/60 tracking-[0.14em]"
+                    : "text-ink-950/80"
                 }`}
               >
                 <span
@@ -130,11 +133,6 @@ export default function Header({ visible }: { visible: boolean }) {
                 >
                   {n.label}
                 </span>
-                {n.label === "AI" && (
-                  <span className="absolute -right-6 -top-2 rounded-full bg-[#c4897a] px-1.5 py-0.5 text-[7px] font-bold uppercase tracking-[0.15em] text-white">
-                    NEW
-                  </span>
-                )}
                 <span className="pointer-events-none absolute -bottom-1 left-0 h-px w-full origin-left scale-x-0 bg-ink-950 transition-transform duration-500 group-hover:origin-left group-hover:scale-x-100" />
               </a>
             ))}

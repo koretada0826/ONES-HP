@@ -101,16 +101,20 @@ export default function Footer() {
         {/* Middle nav */}
         <ul ref={navRef} className="grid grid-cols-2 gap-y-3 text-[11px] uppercase tracking-[0.32em] text-ink-950/70">
           {[
-            { label: "TOP", href: "/" },
-            { label: "COMPANY", href: "/company" },
-            { label: "SERVICE", href: "/product" },
-            { label: "AI", href: "/ai" },
-            { label: "CASE", href: "/case" },
-            { label: "CONTACT", href: "/#contact" },
+            { label: "TOP", href: "#home" },
+            { label: "CHALLENGES", href: "#problem" },
+            { label: "SERVICES", href: "#services" },
+            { label: "FLOW", href: "#flow" },
+            { label: "FAQ", href: "#faq" },
+            { label: "CONTACT", href: "#contact" },
+            { label: "コーポレートサイトへ", href: "/design1" },
+            { label: "note", href: COMPANY.noteUrl },
           ].map((l) => (
             <li key={l.label}>
               <a
                 href={l.href}
+                target={l.href.startsWith("http") ? "_blank" : undefined}
+                rel={l.href.startsWith("http") ? "noopener" : undefined}
                 onMouseEnter={() => setCursor("open")}
                 onMouseLeave={() => setCursor("default")}
                 className="transition-colors hover:text-[#c4897a]"
@@ -138,7 +142,7 @@ export default function Footer() {
           className="whitespace-nowrap font-display font-black uppercase leading-none tracking-[-0.02em]"
           style={{
             fontSize: "clamp(4rem, 18vw, 22rem)",
-            WebkitTextStroke: "1px rgba(255,255,255,0.14)",
+            WebkitTextStroke: "1px rgba(10,10,14,0.14)",
             color: "transparent",
           }}
         >
