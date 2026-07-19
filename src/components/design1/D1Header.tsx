@@ -7,7 +7,7 @@ import { IMAGES } from "@/lib/data";
 const NAV = [
   { label: "会社紹介", href: "#about" },
   { label: "サービス", href: "#service" },
-  { label: "AI", href: "/ai" },
+  { label: "AI", href: "/" },
   { label: "実績", href: "#track" },
   { label: "お知らせ", href: "#news" },
   { label: "お問い合わせ", href: "#contact" },
