@@ -24,7 +24,7 @@ export default function D1Service() {
             />
           </div>
           <div>
-            <p className="text-[11px] tracking-[0.32em] text-neutral-500">{MAIN_SERVICE.labelEn}</p>
+            <p className="text-[11px] tracking-[0.32em] text-neutral-500">MAIN SERVICE 01</p>
             <h3 className="mt-3 text-xl font-bold text-neutral-950 md:text-2xl">
               {MAIN_SERVICE.headline}
             </h3>
@@ -51,33 +51,11 @@ export default function D1Service() {
           </div>
         </div>
 
-        {/* Sub service */}
-        <div className="mt-24 grid gap-12 border-t border-neutral-200 pt-14 md:mt-32 md:grid-cols-[1fr_1fr] md:gap-16">
-          <div>
-            <p className="text-[11px] tracking-[0.32em] text-neutral-500">{SUB_SERVICE.labelEn}</p>
-            <h3 className="mt-3 text-xl font-bold tracking-tight text-neutral-950 md:text-2xl">
-              {SUB_SERVICE.title}
-            </h3>
-            <p className="mt-2 text-sm tracking-[0.14em] text-neutral-600">{SUB_SERVICE.ja}</p>
-            <p className="mt-8 text-[13px] leading-[2] text-neutral-800">{SUB_SERVICE.desc}</p>
-          </div>
-          <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-200 md:aspect-[4/3]">
-            <Image
-              src={SUB_SERVICE.image}
-              alt={SUB_SERVICE.title}
-              fill
-              unoptimized
-              sizes="(max-width: 900px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-        </div>
-
-        {/* AI service — link out to design2 */}
+        {/* AI service (MAIN 02) — link out to design2 */}
         <div className="mt-24 border-t border-neutral-200 pt-14 md:mt-32">
           <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
             <div>
-              <p className="text-[11px] tracking-[0.32em] text-neutral-500">{AI_SERVICE.labelEn}</p>
+              <p className="text-[11px] tracking-[0.32em] text-neutral-500">MAIN SERVICE 02</p>
               <h3 className="mt-3 text-xl font-bold tracking-tight text-neutral-950 md:text-2xl">
                 {AI_SERVICE.title}
               </h3>
@@ -115,6 +93,28 @@ export default function D1Service() {
                 ))}
               </ul>
             </div>
+          </div>
+        </div>
+
+        {/* Sub service 01 — Talent Management */}
+        <div className="mt-24 grid gap-12 border-t border-neutral-200 pt-14 md:mt-32 md:grid-cols-[1fr_1fr] md:gap-16">
+          <div>
+            <p className="text-[11px] tracking-[0.32em] text-neutral-500">SUB SERVICE 01</p>
+            <h3 className="mt-3 text-xl font-bold tracking-tight text-neutral-950 md:text-2xl">
+              {SUB_SERVICE.title}
+            </h3>
+            <p className="mt-2 text-sm tracking-[0.14em] text-neutral-600">{SUB_SERVICE.ja}</p>
+            <p className="mt-8 text-[13px] leading-[2] text-neutral-800">{SUB_SERVICE.desc}</p>
+          </div>
+          <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-200 md:aspect-[4/3]">
+            <Image
+              src={SUB_SERVICE.image}
+              alt={SUB_SERVICE.title}
+              fill
+              unoptimized
+              sizes="(max-width: 900px) 100vw, 50vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </div>
