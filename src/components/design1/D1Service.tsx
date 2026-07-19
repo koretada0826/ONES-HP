@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { MAIN_SERVICE, SUB_SERVICE, IMAGES } from "@/lib/data";
+import { MAIN_SERVICE, SUB_SERVICE, AI_SERVICE, IMAGES } from "@/lib/data";
 
 export default function D1Service() {
   return (
@@ -70,6 +70,51 @@ export default function D1Service() {
               sizes="(max-width: 900px) 100vw, 50vw"
               className="object-cover"
             />
+          </div>
+        </div>
+
+        {/* AI service — link out to design2 */}
+        <div className="mt-24 border-t border-neutral-200 pt-14 md:mt-32">
+          <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
+            <div>
+              <p className="text-[11px] tracking-[0.32em] text-neutral-500">{AI_SERVICE.labelEn}</p>
+              <h3 className="mt-3 text-xl font-bold tracking-tight text-neutral-950 md:text-2xl">
+                {AI_SERVICE.title}
+              </h3>
+              <p className="mt-2 text-sm tracking-[0.14em] text-neutral-600">{AI_SERVICE.ja}</p>
+              <p className="mt-8 text-[13px] leading-[2] text-neutral-800">
+                {AI_SERVICE.desc}
+              </p>
+              <a
+                href="/ai"
+                className="mt-8 inline-flex items-center gap-2 border-b border-neutral-900 pb-1 text-[13px] tracking-[0.14em] text-neutral-900 transition hover:gap-3"
+              >
+                AIサービス詳細を見る
+                <span aria-hidden>→</span>
+              </a>
+            </div>
+            <div>
+              <ul className="grid gap-4 border-t border-neutral-200">
+                {AI_SERVICE.items.map((item) => (
+                  <li
+                    key={item.no}
+                    className="grid grid-cols-[80px_1fr] gap-4 border-b border-neutral-200 py-4 md:grid-cols-[100px_1fr] md:gap-6 md:py-5"
+                  >
+                    <span className="pt-1 text-[10px] tracking-[0.28em] text-neutral-500">
+                      {item.no}
+                    </span>
+                    <div>
+                      <p className="text-[10px] tracking-[0.24em] text-neutral-500">
+                        {item.subtag}
+                      </p>
+                      <p className="mt-1 text-[14px] font-bold leading-[1.55] text-neutral-950">
+                        {item.title}
+                      </p>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </div>
