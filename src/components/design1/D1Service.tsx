@@ -64,7 +64,7 @@ export default function D1Service() {
                 {AI_SERVICE.desc}
               </p>
               <a
-                href="/"
+                href="/ai-lp"
                 className="mt-8 inline-flex items-center gap-2 border-b border-neutral-900 pb-1 text-[13px] tracking-[0.14em] text-neutral-900 transition hover:gap-3"
               >
                 AIサービス詳細を見る

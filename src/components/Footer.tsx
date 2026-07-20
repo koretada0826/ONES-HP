@@ -107,7 +107,7 @@ export default function Footer() {
             { label: "FLOW", href: "#flow" },
             { label: "FAQ", href: "#faq" },
             { label: "CONTACT", href: "#contact" },
-            { label: "コーポレートサイトへ", href: "/design1" },
+            { label: "コーポレートサイトへ", href: "/" },
             { label: "note", href: COMPANY.noteUrl },
           ].map((l) => (
             <li key={l.label}>

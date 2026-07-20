@@ -1,45 +1,29 @@
-"use client";
+import D1Header from "@/components/design1/D1Header";
+import D1Hero from "@/components/design1/D1Hero";
+import D1About from "@/components/design1/D1About";
+import D1Service from "@/components/design1/D1Service";
+import D1TrackRecord from "@/components/design1/D1TrackRecord";
+import D1News from "@/components/design1/D1News";
+import D1Contact from "@/components/design1/D1Contact";
+import D1Footer from "@/components/design1/D1Footer";
 
-import { useState } from "react";
-import dynamic from "next/dynamic";
-import SmoothScrollProvider from "@/components/SmoothScrollProvider";
-import CustomCursor from "@/components/CustomCursor";
-import PageTransition from "@/components/PageTransition";
-import AmbientBackground from "@/components/AmbientBackground";
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import AiProblem from "@/components/lp/AiProblem";
-import AiServices from "@/components/lp/AiServices";
-import AiFlow from "@/components/lp/AiFlow";
-import AiFaq from "@/components/lp/AiFaq";
-import AiContact from "@/components/lp/AiContact";
-import Footer from "@/components/Footer";
-
-const LoadingScreen = dynamic(() => import("@/components/LoadingScreen"), {
-  ssr: false,
-});
-
-export default function AiLandingPage() {
-  const [loaded, setLoaded] = useState(false);
-
+export default function HomePage() {
   return (
-    <>
-      <LoadingScreen onDone={() => setLoaded(true)} />
-      <AmbientBackground />
-      <PageTransition />
-      <CustomCursor />
-      <SmoothScrollProvider>
-        <Header visible={loaded} />
-        <main>
-          <HeroSection visible={loaded} />
-          <AiProblem />
-          <AiServices />
-          <AiFlow />
-          <AiFaq />
-          <AiContact />
-        </main>
-        <Footer />
-      </SmoothScrollProvider>
-    </>
+    <div className="design1-root bg-white text-ink-950">
+      <style>{`
+        .design1-root { cursor: auto; }
+        .design1-root a, .design1-root button { cursor: pointer; }
+      `}</style>
+      <D1Header />
+      <main>
+        <D1Hero />
+        <D1About />
+        <D1Service />
+        <D1TrackRecord />
+        <D1News />
+        <D1Contact />
+      </main>
+      <D1Footer />
+    </div>
   );
 }

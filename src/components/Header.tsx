@@ -15,7 +15,7 @@ const NAV = [
   { label: "FLOW", href: "#flow" },
   { label: "FAQ", href: "#faq" },
   { label: "CONTACT", href: "#contact" },
-  { label: "コーポレートサイト", href: "/design1" },
+  { label: "コーポレートサイト", href: "/" },
 ];
 
 export default function Header({ visible }: { visible: boolean }) {

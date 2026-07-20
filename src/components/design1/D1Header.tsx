@@ -7,7 +7,7 @@ import { IMAGES } from "@/lib/data";
 const NAV = [
   { label: "会社紹介", href: "#about" },
   { label: "サービス", href: "#service" },
-  { label: "AI", href: "/" },
+  { label: "AI サービス", href: "/ai-lp" },
   { label: "実績", href: "#track" },
   { label: "お知らせ", href: "#news" },
   { label: "お問い合わせ", href: "#contact" },
@@ -31,7 +31,7 @@ export default function D1Header() {
       }`}
     >
       <div className="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5 md:h-20 md:px-8">
-        <a href="/design1" className="flex items-center gap-2">
+        <a href="/" className="flex items-center gap-2">
           <Image
             src={IMAGES.logo}
             alt="ONES MANAGEMENT"
@@ -42,15 +42,27 @@ export default function D1Header() {
           />
         </a>
         <nav className="hidden items-center gap-7 md:flex">
-          {NAV.map((n) => (
-            <a
-              key={n.href}
-              href={n.href}
-              className="text-[12px] tracking-[0.14em] text-neutral-700 transition hover:text-neutral-950"
-            >
-              {n.label}
-            </a>
-          ))}
+          {NAV.map((n) => {
+            const isAi = n.href === "/ai-lp";
+            return (
+              <a
+                key={n.href}
+                href={n.href}
+                className={
+                  isAi
+                    ? "group inline-flex items-center gap-2 border border-neutral-900 px-3 py-1.5 text-[12px] tracking-[0.14em] text-neutral-900 transition hover:bg-neutral-900 hover:text-white"
+                    : "text-[12px] tracking-[0.14em] text-neutral-700 transition hover:text-neutral-950"
+                }
+              >
+                {n.label}
+                {isAi && (
+                  <span className="text-[10px] transition-transform group-hover:translate-x-0.5">
+                    →
+                  </span>
+                )}
+              </a>
+            );
+          })}
         </nav>
         <button
           aria-label={open ? "メニューを閉じる" : "メニューを開く"}
