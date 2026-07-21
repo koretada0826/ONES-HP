@@ -41,12 +41,21 @@ export const SUB_SERVICE = {
 // Sub service 02 — AI / DIGITAL SOLUTIONS
 export const AI_SERVICE = {
   title: "AI × DIGITAL SOLUTIONS",
+  titleSub: "（HP制作・LP制作・業務効率化ツール・AIチャットボット etc..）",
   ja: "AI・デジタルソリューション",
-  labelEn: "SUB SERVICE 02",
+  labelEn: "MAIN SERVICE 02",
   headline: "現場のパフォーマンスを、テクノロジーで最大化する。",
   desc:
     "サービス業の生産性向上を、AI・デジタル技術で加速。コーポレートサイトやランディングページの制作から、業務効率化ツール、AIチャットボットの導入まで、現場のオペレーションに寄り添ったソリューションを一気通貫で提供します。",
-  image: "https://ones-mg.com/service-ex03.jpg",
+  concerns: [
+    "AIを活用したいけど、何から始めれば良いか分からない…",
+    "業務効率化ツールをオーダーメイドで作りたい…",
+    "Webサイトを新しくしたいけど、AI時代に対応したものにしたい…",
+  ],
+  summary:
+    "そういった課題に、AI・デジタル技術でお答えし、\n現場のパフォーマンスを最大化します。",
+  image:
+    "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=1200&q=80",
   items: [
     {
       no: "AI.01",

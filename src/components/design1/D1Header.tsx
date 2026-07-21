@@ -13,7 +13,8 @@ const DEFAULT_NAV = [
 
 const DEFAULT_SECTION_NAV = [
   { label: "TOPICS", href: "/#topics" },
-  { label: "MAIN SERVICE", href: "/#service" },
+  { label: "MAIN SERVICE 01", href: "/#service" },
+  { label: "MAIN SERVICE 02", href: "/#service-ai" },
   { label: "TRACK RECORD", href: "/#jisseki" },
   { label: "TALENT", href: "/#sub-service" },
   { label: "ABOUT US", href: "/#about" },
@@ -151,8 +152,9 @@ export default function D1Header({
             WebkitBackdropFilter: "blur(12px)",
             borderBottom: "1px solid rgba(255,255,255,0.07)",
             justifyContent: "center",
-            gap: "28px",
+            gap: "20px",
             padding: "7px 16px",
+            flexWrap: "wrap",
           }}
         >
           {sectionNav.map((n) => (
@@ -161,8 +163,8 @@ export default function D1Header({
               href={n.href}
               className="whitespace-nowrap uppercase transition-colors hover:text-white"
               style={{
-                fontSize: "0.58rem",
-                letterSpacing: "0.22em",
+                fontSize: "0.55rem",
+                letterSpacing: "0.20em",
                 color: "rgba(255,255,255,0.50)",
               }}
             >
@@ -174,8 +176,8 @@ export default function D1Header({
               href="/ai-lp"
               className="whitespace-nowrap uppercase transition-colors hover:text-white"
               style={{
-                fontSize: "0.58rem",
-                letterSpacing: "0.22em",
+                fontSize: "0.55rem",
+                letterSpacing: "0.20em",
                 color: "rgba(255,255,255,0.50)",
               }}
             >

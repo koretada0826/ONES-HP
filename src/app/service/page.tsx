@@ -3,7 +3,7 @@ import D1PageHero from "@/components/design1/D1PageHero";
 import D1Footer from "@/components/design1/D1Footer";
 import D1LineFab from "@/components/design1/D1LineFab";
 import Image from "next/image";
-import { IMAGES } from "@/lib/data";
+import { IMAGES, AI_SERVICE } from "@/lib/data";
 
 const SERVICE_BLOCKS = [
   {
@@ -72,10 +72,11 @@ const TOOL_FEATURES = [
 ];
 
 const SECTION_NAV = [
-  { label: "MAIN SERVICE", href: "#service-intro" },
+  { label: "MAIN SERVICE 01", href: "#service-intro" },
   { label: "戦略立案", href: "#ex01" },
   { label: "マニュアル", href: "#ex02" },
   { label: "ツール制作", href: "#ex03" },
+  { label: "MAIN SERVICE 02", href: "#service-ai" },
 ];
 
 export default function ServicePage() {
@@ -121,7 +122,7 @@ export default function ServicePage() {
               marginBottom: "0.6rem",
             }}
           >
-            MAIN SERVICE
+            MAIN SERVICE 01
           </p>
           <h2
             style={{
@@ -394,6 +395,142 @@ export default function ServicePage() {
                   </ul>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* MAIN SERVICE 02 — AI × DIGITAL SOLUTIONS INTRO */}
+        <section
+          id="service-ai"
+          style={{
+            textAlign: "center",
+            padding: "5rem 2rem 3rem",
+            background: "#f5f5f7",
+            borderTop: "1px solid rgba(0,0,0,0.06)",
+          }}
+        >
+          <p
+            style={{
+              fontSize: "0.66rem",
+              letterSpacing: "0.42em",
+              color: "#86868b",
+              textTransform: "uppercase",
+              marginBottom: "0.6rem",
+            }}
+          >
+            MAIN SERVICE 02
+          </p>
+          <h2
+            style={{
+              fontSize: "clamp(1.75rem, 3.5vw, 2.6rem)",
+              fontWeight: 700,
+              color: "#1d1d1f",
+              letterSpacing: "0.02em",
+              marginBottom: "0.75rem",
+              lineHeight: 1.2,
+            }}
+          >
+            AI × DIGITAL SOLUTIONS
+          </h2>
+          <div
+            style={{
+              width: "24px",
+              height: "1px",
+              background: "#c4897a",
+              margin: "0.75rem auto 2.5rem",
+            }}
+          />
+          <p
+            style={{
+              maxWidth: "680px",
+              margin: "0 auto",
+              fontSize: "0.95rem",
+              color: "#555",
+              lineHeight: 1.9,
+            }}
+          >
+            {AI_SERVICE.headline}
+            <br />
+            AI・デジタル技術で、サービス業の生産性向上を加速します。
+          </p>
+        </section>
+
+        {/* AI ITEMS GRID */}
+        <section style={{ padding: "5rem 2rem", background: "#f5f5f7" }}>
+          <div style={{ maxWidth: "1180px", margin: "0 auto" }}>
+            <div
+              style={{
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+                gap: "1.4rem",
+              }}
+            >
+              {AI_SERVICE.items.map((item) => (
+                <div
+                  key={item.no}
+                  style={{
+                    background: "#fff",
+                    border: "1px solid rgba(0,0,0,0.07)",
+                    borderRadius: "18px",
+                    padding: "2rem",
+                    boxShadow: "0 2px 16px rgba(0,0,0,0.04)",
+                    transition: "box-shadow 0.3s, transform 0.3s",
+                  }}
+                >
+                  <p
+                    style={{
+                      fontSize: "0.60rem",
+                      color: "#c4897a",
+                      fontWeight: 600,
+                      letterSpacing: "0.24em",
+                      marginBottom: "0.5rem",
+                    }}
+                  >
+                    {item.no} — {item.subtag}
+                  </p>
+                  <h3
+                    style={{
+                      fontSize: "0.95rem",
+                      fontWeight: 700,
+                      color: "#1d1d1f",
+                      marginBottom: "0.9rem",
+                      letterSpacing: "0.01em",
+                      lineHeight: 1.5,
+                    }}
+                  >
+                    {item.title}
+                  </h3>
+                  <p
+                    style={{
+                      fontSize: "0.82rem",
+                      color: "#6e6e73",
+                      lineHeight: 1.9,
+                    }}
+                  >
+                    {item.desc}
+                  </p>
+                </div>
+              ))}
+            </div>
+
+            <div style={{ textAlign: "center", marginTop: "3rem" }}>
+              <a
+                href="/ai-lp"
+                style={{
+                  display: "inline-block",
+                  background: "#1a1a2e",
+                  color: "#fff",
+                  padding: "0.95rem 2.8rem",
+                  fontSize: "0.8rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.1em",
+                  borderRadius: "980px",
+                  textDecoration: "none",
+                  transition: "background 0.2s, transform 0.2s",
+                }}
+              >
+                AIサービス詳細はこちら →
+              </a>
             </div>
           </div>
         </section>
