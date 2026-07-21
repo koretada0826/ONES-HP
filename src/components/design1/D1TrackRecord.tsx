@@ -1,45 +1,147 @@
 "use client";
 
-import Image from "next/image";
 import { TRACK_RECORD } from "@/lib/data";
+import SectionHead from "./D1SectionHead";
 
 export default function D1TrackRecord() {
   return (
-    <section id="track" className="border-t border-neutral-200 bg-white py-20 md:py-28">
-      <div className="mx-auto max-w-[1200px] px-5 md:px-8">
-        <p className="text-[11px] tracking-[0.32em] text-neutral-500">TRACK RECORD</p>
-        <h2 className="mt-4 text-2xl font-bold tracking-tight text-neutral-950 md:text-3xl">
-          サポート実績
-        </h2>
-        <p className="mt-6 max-w-2xl text-[13px] leading-[2] text-neutral-700">
-          国内各エリアにとどまらず、アジア圏をはじめとした海外での支援実績も有しています。
-        </p>
+    <section id="jisseki" style={{ textAlign: "center" }}>
+      <SectionHead label="TRACK RECORD" title="サポート実績" />
 
-        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {TRACK_RECORD.map((c) => (
-            <article key={c.id} className="border border-neutral-200 bg-white">
-              <div className="relative aspect-[4/3] w-full overflow-hidden bg-neutral-200">
-                <Image
-                  src={c.image}
-                  alt={c.label}
-                  fill
-                  unoptimized
-                  sizes="(max-width: 640px) 100vw, 25vw"
-                  className="object-cover"
+      <p
+        style={{
+          textAlign: "center",
+          maxWidth: "760px",
+          margin: "0 auto 2.8rem",
+          fontSize: "0.88rem",
+          color: "rgba(255,255,255,0.60)",
+          letterSpacing: "0.05em",
+          lineHeight: 1.9,
+        }}
+      >
+        <span className="hidden md:inline">
+          国内各エリアにとどまらず、アジア圏をはじめとした海外での支援実績も有しています。
+          <br />
+          グローバルな視点で、サービス業の成長を全力でサポートします。
+        </span>
+        <span className="md:hidden">
+          国内にとどまらず、
+          <br />
+          アジア圏などの海外支援実績も有しています。
+          <br />
+          グローバルな視点で、
+          <br />
+          サービス業の成長を全力でサポートします。
+        </span>
+      </p>
+
+      <div
+        className="d1-client-grid"
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(2, 1fr)",
+          gap: "18px",
+          maxWidth: "860px",
+          margin: "44px auto 0",
+        }}
+      >
+        {TRACK_RECORD.map((cat) => (
+          <div
+            key={cat.id}
+            style={{
+              position: "relative",
+              overflow: "hidden",
+              borderRadius: "20px",
+              minHeight: "340px",
+              display: "flex",
+              alignItems: "flex-end",
+            }}
+          >
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                backgroundImage: `url(${cat.image})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                filter: "brightness(0.70) saturate(0.85)",
+              }}
+            />
+            <div
+              style={{
+                content: "''",
+                position: "absolute",
+                inset: 0,
+                background:
+                  "linear-gradient(to top, rgba(0,0,0,0.92) 0%, rgba(0,0,0,0.30) 55%, rgba(0,0,0,0.02) 100%)",
+                zIndex: 1,
+                pointerEvents: "none",
+              }}
+            />
+            <div
+              style={{
+                position: "relative",
+                zIndex: 2,
+                padding: "26px 26px 24px",
+                width: "100%",
+                textAlign: "left",
+              }}
+            >
+              <p
+                style={{
+                  fontSize: "0.60rem",
+                  letterSpacing: "0.30em",
+                  color: "#d4a08a",
+                  fontWeight: 600,
+                  textTransform: "uppercase",
+                  marginBottom: "14px",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <span
+                  style={{
+                    display: "block",
+                    width: "22px",
+                    height: "1px",
+                    background:
+                      "linear-gradient(90deg, #c4897a, rgba(196,137,122,0.12))",
+                    flexShrink: 0,
+                  }}
                 />
-              </div>
-              <div className="p-5">
-                <p className="text-[10px] tracking-[0.28em] text-neutral-500">{c.label}</p>
-                <ul className="mt-3 space-y-1 text-[12px] text-neutral-800">
-                  {c.items.map((item) => (
-                    <li key={item}>・{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </article>
-          ))}
-        </div>
+                {cat.label}
+              </p>
+              <ul
+                style={{
+                  listStyle: "none",
+                  padding: 0,
+                  margin: 0,
+                  fontSize: "0.84rem",
+                  color: "rgba(255,255,255,0.80)",
+                  lineHeight: 2.1,
+                }}
+              >
+                {cat.items.map((it) => (
+                  <li key={it}>{it}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ))}
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          #jisseki .d1-client-grid {
+            grid-template-columns: 1fr 1fr !important;
+          }
+          #jisseki .d1-client-grid > div { min-height: 280px !important; }
+        }
+        @media (max-width: 480px) {
+          #jisseki .d1-client-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </section>
   );
 }

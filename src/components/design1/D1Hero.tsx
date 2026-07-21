@@ -1,52 +1,107 @@
 "use client";
 
-import Image from "next/image";
-import { IMAGES } from "@/lib/data";
-
 export default function D1Hero() {
   return (
-    <section className="relative min-h-[100svh] w-full overflow-hidden">
-      <Image
-        src={IMAGES.hero}
-        alt=""
-        fill
-        priority
-        unoptimized
-        sizes="100vw"
-        className="object-cover"
-      />
-      {/* Soft wash so text stays legible */}
+    <section
+      id="home"
+      className="relative min-h-[100svh] w-full overflow-hidden"
+      style={{ background: "transparent" }}
+    >
+      {/* Hero has NO own image — shows the fixed body bg (色 → grayscale) through */}
+      {/* 本家 overlay: 135° diagonal, rgba(6,9,20, 0.62→0.18) */}
       <div
         className="absolute inset-0"
         style={{
           background:
-            "linear-gradient(180deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 45%, rgba(255,255,255,0.55) 100%)",
+            "linear-gradient(135deg, rgba(6,9,20,0.62) 0%, rgba(6,9,20,0.34) 55%, rgba(6,9,20,0.18) 100%)",
         }}
       />
 
-      <div className="relative z-10 mx-auto flex min-h-[100svh] max-w-[1200px] flex-col items-center justify-center px-5 pt-24 pb-16 text-center md:px-8 md:pt-28">
-        <p className="text-[11px] tracking-[0.42em] text-neutral-800/85 md:text-[12px]">
+      {/* Container — 本家: max-width: 720px, absolute-centered */}
+      <div className="relative z-10 mx-auto flex min-h-[100svh] w-[88%] max-w-[720px] flex-col items-center justify-center pt-24 pb-16 text-center md:pt-28">
+        {/* tag: font-size 0.62rem, letter-spacing 0.4em, color rgba(255,255,255,0.55), margin-bottom 1.2rem */}
+        <p
+          style={{
+            fontSize: "0.62rem",
+            letterSpacing: "0.4em",
+            color: "rgba(255,255,255,0.55)",
+            marginBottom: "1.2rem",
+            textTransform: "uppercase",
+          }}
+        >
           多種多様なサービス事業者様へ
         </p>
+
+        {/* headline: clamp(2.4rem, 6vw, 4.5rem), lh 1.06, ls 0.06em POSITIVE, mb 0.6rem */}
         <h1
-          className="mt-8 font-display font-black leading-[0.9] tracking-[-0.01em] text-white drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]"
-          style={{ fontSize: "clamp(2.6rem, 8vw, 8rem)" }}
+          className="font-display"
+          style={{
+            fontSize: "clamp(2.4rem, 6vw, 4.5rem)",
+            fontWeight: 700,
+            color: "#fff",
+            lineHeight: 1.06,
+            letterSpacing: "0.06em",
+            marginBottom: "0.6rem",
+            textTransform: "uppercase",
+            textShadow: "0 1px 8px rgba(0,0,0,0.22)",
+          }}
         >
-          <span className="block">CREATING</span>
-          <span className="block">THE FUTURE</span>
+          CREATING
+          <br />
+          THE FUTURE
         </h1>
-        <p className="mt-6 text-[10px] tracking-[0.42em] text-neutral-700/80 md:mt-8 md:text-[11px]">
-          OF THE SERVICE INDUSTRY
+
+        {/* sub: 0.66rem, ls 0.28em, color/42, mb 1.8rem */}
+        <p
+          style={{
+            fontSize: "0.66rem",
+            color: "rgba(255,255,255,0.42)",
+            letterSpacing: "0.28em",
+            marginBottom: "1.8rem",
+            textTransform: "uppercase",
+          }}
+        >
+          of the SERVICE INDUSTRY
         </p>
 
-        <div className="mt-10 space-y-3 text-[15px] leading-[2] tracking-[0.05em] text-neutral-900 md:mt-14 md:text-[17px]">
-          <p>サービス業の未来を創る。</p>
-          <p>人が生み出す価値の最大化。</p>
-        </div>
+        {/* copy: 0.88rem, color/72, lh 1.9 (本家は 2.1 だがユーザー要望で詰め), mb 1.6rem (本家 2.5rem を詰めた) */}
+        <p
+          style={{
+            fontSize: "0.88rem",
+            color: "rgba(255,255,255,0.72)",
+            lineHeight: 1.9,
+            marginBottom: "1.6rem",
+          }}
+        >
+          サービス業の未来を創る。
+          <br />
+          人が生み出す価値の最大化。
+        </p>
 
+        {/* cta: bg white/10, border white/30, padding 0.9rem 2.4rem, fs 0.76rem, ls 0.14em, rounded 980px */}
         <a
           href="#about"
-          className="group mt-12 inline-flex items-center gap-3 rounded-full border border-neutral-900/70 bg-white/10 px-8 py-3.5 text-[13px] tracking-[0.14em] text-neutral-900 backdrop-blur-sm transition hover:bg-neutral-900 hover:text-white md:mt-16 md:px-10 md:py-4"
+          className="group inline-flex items-center gap-2 transition"
+          style={{
+            background: "rgba(255,255,255,0.10)",
+            color: "#fff",
+            padding: "0.9rem 2.4rem",
+            fontSize: "0.76rem",
+            fontWeight: 600,
+            letterSpacing: "0.14em",
+            borderRadius: "980px",
+            border: "1px solid rgba(255,255,255,0.30)",
+            backdropFilter: "blur(8px)",
+            WebkitBackdropFilter: "blur(8px)",
+          }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = "rgba(255,255,255,0.20)";
+            e.currentTarget.style.borderColor = "rgba(255,255,255,0.55)";
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = "rgba(255,255,255,0.10)";
+            e.currentTarget.style.borderColor = "rgba(255,255,255,0.30)";
+          }}
         >
           会社詳細はこちら
           <span className="transition-transform duration-300 group-hover:translate-x-1">

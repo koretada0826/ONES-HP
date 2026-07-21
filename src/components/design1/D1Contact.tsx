@@ -1,39 +1,72 @@
 "use client";
 
 import { COMPANY } from "@/lib/data";
+import SectionHead from "./D1SectionHead";
 
 export default function D1Contact() {
   return (
-    <section id="contact" className="border-t border-neutral-200 bg-white py-24 md:py-32">
-      <div className="mx-auto max-w-[900px] px-5 text-center md:px-8">
-        <p className="text-[11px] tracking-[0.32em] text-neutral-500">CONTACT</p>
-        <h2 className="mt-4 text-2xl font-bold tracking-tight text-neutral-950 md:text-3xl">
-          お問い合わせ
-        </h2>
-        <p className="mx-auto mt-8 max-w-xl text-[13px] leading-[2] text-neutral-800">
-          サービス業のパフォーマンス向上・人材確保・業務効率化など、事業の課題についてお気軽にご相談ください。
+    <section id="contact">
+      <div style={{ maxWidth: "820px", margin: "0 auto" }}>
+        <SectionHead label="GET IN TOUCH" title="CONTACT" />
+
+        <p
+          style={{
+            textAlign: "center",
+            fontSize: "0.86rem",
+            color: "rgba(255,255,255,0.62)",
+            lineHeight: 2.1,
+            marginBottom: "3rem",
+          }}
+        >
+          お問い合わせ・ご相談はこちらからお気軽にどうぞ。
+          <br />
+          通常2営業日以内にご返信いたします。
         </p>
-        <div className="mt-10 flex flex-wrap justify-center gap-3">
+
+        <div style={{ textAlign: "center", padding: "2rem 0 1rem" }}>
           <a
             href={COMPANY.contactFormUrl}
             target="_blank"
             rel="noopener"
-            className="inline-flex h-12 items-center gap-3 rounded-sm bg-neutral-900 px-6 text-[13px] font-medium text-white transition hover:bg-neutral-700"
+            style={{
+              display: "inline-block",
+              background: "rgba(255,255,255,0.10)",
+              border: "1px solid rgba(255,255,255,0.30)",
+              color: "#fff",
+              padding: "1.1rem 4rem",
+              fontSize: "0.84rem",
+              fontWeight: 600,
+              letterSpacing: "0.14em",
+              borderRadius: "980px",
+              textDecoration: "none",
+              backdropFilter: "blur(8px)",
+              WebkitBackdropFilter: "blur(8px)",
+              transition: "background 0.2s, border-color 0.2s, transform 0.2s",
+            }}
+            onMouseEnter={(e) => {
+              e.currentTarget.style.background = "#c4897a";
+              e.currentTarget.style.borderColor = "#c4897a";
+              e.currentTarget.style.transform = "translateY(-2px)";
+            }}
+            onMouseLeave={(e) => {
+              e.currentTarget.style.background = "rgba(255,255,255,0.10)";
+              e.currentTarget.style.borderColor = "rgba(255,255,255,0.30)";
+              e.currentTarget.style.transform = "translateY(0)";
+            }}
           >
-            無料相談はこちら
-            <span aria-hidden>→</span>
+            お問い合わせフォームへ →
           </a>
-          <a
-            href={COMPANY.lineUrl}
-            target="_blank"
-            rel="noopener"
-            className="inline-flex h-12 items-center gap-3 rounded-sm border border-neutral-900 px-6 text-[13px] font-medium text-neutral-900 transition hover:bg-neutral-100"
+          <p
+            style={{
+              fontSize: "0.7rem",
+              color: "rgba(255,255,255,0.45)",
+              marginTop: "1rem",
+              letterSpacing: "0.05em",
+            }}
           >
-            LINEで相談
-            <span aria-hidden>→</span>
-          </a>
+            別タブでフォームが開きます
+          </p>
         </div>
-        <p className="mt-6 text-[11px] text-neutral-500">別タブでフォームが開きます</p>
       </div>
     </section>
   );

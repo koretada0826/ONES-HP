@@ -1,123 +1,156 @@
 "use client";
 
-import Image from "next/image";
-import { MAIN_SERVICE, SUB_SERVICE, AI_SERVICE, IMAGES } from "@/lib/data";
+import { MAIN_SERVICE, IMAGES } from "@/lib/data";
+import SectionHead from "./D1SectionHead";
 
 export default function D1Service() {
   return (
-    <section id="service" className="border-t border-neutral-200 bg-neutral-50 py-20 md:py-28">
-      <div className="mx-auto max-w-[1200px] px-5 md:px-8">
-        <p className="text-[11px] tracking-[0.32em] text-neutral-500">SERVICE</p>
-        <h2 className="mt-4 text-2xl font-bold tracking-tight text-neutral-950 md:text-3xl">
-          事業内容
-        </h2>
+    <section id="service">
+      <div style={{ maxWidth: "920px", margin: "0 auto" }}>
+        <SectionHead label="WHAT WE DO" title="MAIN SERVICE" />
 
-        <div className="mt-14 grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
-          <div className="relative aspect-[4/5] w-full overflow-hidden bg-neutral-200">
-            <Image
-              src={IMAGES.serviceWorry}
-              alt=""
-              fill
-              unoptimized
-              sizes="(max-width: 900px) 100vw, 50vw"
-              className="object-cover"
-            />
-          </div>
-          <div>
-            <p className="text-[11px] tracking-[0.32em] text-neutral-500">MAIN SERVICE 01</p>
-            <h3 className="mt-3 text-xl font-bold text-neutral-950 md:text-2xl">
-              {MAIN_SERVICE.headline}
-            </h3>
-            <div className="mt-8 border-l-2 border-neutral-300 pl-5">
-              <p className="text-[13px] font-semibold text-neutral-700">こんなお悩みはありませんか？</p>
-              <ul className="mt-4 space-y-3 text-[13px] leading-[1.9] text-neutral-800">
-                {MAIN_SERVICE.concerns.map((c, i) => (
-                  <li key={i} className="flex gap-3">
-                    <span className="text-neutral-400">0{i + 1}</span>
-                    <span>「{c}」</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <p className="mt-8 text-[13px] leading-[2] text-neutral-800">
+        {/* 本家: .main-service .split { text-align: center; } — center inside horizontal split */}
+        <div
+          className="d1-split"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "clamp(2rem, 4vw, 4.5rem)",
+            marginTop: "2.6rem",
+            textAlign: "center",
+          }}
+        >
+          {/* Text column */}
+          <div style={{ flex: "1 1 0", minWidth: 0, textAlign: "center" }}>
+            <p
+              style={{
+                fontSize: "clamp(1.05rem, 2.4vw, 1.55rem)",
+                fontWeight: 700,
+                color: "#fff",
+                marginBottom: "0.4rem",
+                letterSpacing: "0.01em",
+              }}
+            >
+              {MAIN_SERVICE.title}
+            </p>
+            <p
+              style={{
+                fontSize: "0.76rem",
+                color: "rgba(255,255,255,0.45)",
+                marginBottom: "2rem",
+                letterSpacing: "0.02em",
+              }}
+            >
+              {MAIN_SERVICE.titleSub}
+            </p>
+
+            <ul
+              style={{
+                listStyle: "none",
+                maxWidth: "660px",
+                margin: "1.4rem auto 1.8rem",
+                padding: 0,
+                textAlign: "center",
+              }}
+            >
+              {MAIN_SERVICE.concerns.map((c) => (
+                <li
+                  key={c}
+                  style={{
+                    fontSize: "0.88rem",
+                    color: "rgba(255,255,255,0.62)",
+                    lineHeight: 1.7,
+                    letterSpacing: "0.04em",
+                    padding: "0.12rem 0",
+                  }}
+                >
+                  「{c}」
+                </li>
+              ))}
+            </ul>
+
+            <p
+              style={{
+                fontSize: "0.93rem",
+                color: "rgba(255,255,255,0.72)",
+                textAlign: "center",
+                lineHeight: 2.1,
+                marginBottom: "2.4rem",
+              }}
+            >
               {MAIN_SERVICE.summary}
             </p>
-            <div className="mt-10 border-t border-neutral-200 pt-6">
-              <p className="text-lg font-bold text-neutral-950 md:text-xl">
-                {MAIN_SERVICE.title}
-              </p>
-              <p className="mt-2 text-xs text-neutral-600">{MAIN_SERVICE.titleSub}</p>
-            </div>
-          </div>
-        </div>
 
-        {/* AI service (MAIN 02) — link out to design2 */}
-        <div className="mt-24 border-t border-neutral-200 pt-14 md:mt-32">
-          <div className="grid gap-12 md:grid-cols-[1fr_1fr] md:gap-16">
-            <div>
-              <p className="text-[11px] tracking-[0.32em] text-neutral-500">MAIN SERVICE 02</p>
-              <h3 className="mt-3 text-xl font-bold tracking-tight text-neutral-950 md:text-2xl">
-                {AI_SERVICE.title}
-              </h3>
-              <p className="mt-2 text-sm tracking-[0.14em] text-neutral-600">{AI_SERVICE.ja}</p>
-              <p className="mt-8 text-[13px] leading-[2] text-neutral-800">
-                {AI_SERVICE.desc}
-              </p>
+            <div style={{ textAlign: "center" }}>
               <a
                 href="/ai-lp"
-                className="mt-8 inline-flex items-center gap-2 border-b border-neutral-900 pb-1 text-[13px] tracking-[0.14em] text-neutral-900 transition hover:gap-3"
+                className="d1-glass-btn"
+                style={{
+                  display: "inline-block",
+                  background: "rgba(255,255,255,0.10)",
+                  border: "1px solid rgba(255,255,255,0.30)",
+                  color: "#fff",
+                  padding: "0.95rem 2.8rem",
+                  fontSize: "0.8rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.1em",
+                  borderRadius: "980px",
+                  backdropFilter: "blur(8px)",
+                  WebkitBackdropFilter: "blur(8px)",
+                  transition: "background 0.2s, border-color 0.2s, transform 0.2s",
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = "#c4897a";
+                  e.currentTarget.style.borderColor = "#c4897a";
+                  e.currentTarget.style.transform = "translateY(-2px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = "rgba(255,255,255,0.10)";
+                  e.currentTarget.style.borderColor = "rgba(255,255,255,0.30)";
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
               >
-                AIサービス詳細を見る
-                <span aria-hidden>→</span>
+                サービス詳細はこちら →
               </a>
             </div>
-            <div>
-              <ul className="grid gap-4 border-t border-neutral-200">
-                {AI_SERVICE.items.map((item) => (
-                  <li
-                    key={item.no}
-                    className="grid grid-cols-[80px_1fr] gap-4 border-b border-neutral-200 py-4 md:grid-cols-[100px_1fr] md:gap-6 md:py-5"
-                  >
-                    <span className="pt-1 text-[10px] tracking-[0.28em] text-neutral-500">
-                      {item.no}
-                    </span>
-                    <div>
-                      <p className="text-[10px] tracking-[0.24em] text-neutral-500">
-                        {item.subtag}
-                      </p>
-                      <p className="mt-1 text-[14px] font-bold leading-[1.55] text-neutral-950">
-                        {item.title}
-                      </p>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
-        </div>
 
-        {/* Sub service 01 — Talent Management */}
-        <div className="mt-24 grid gap-12 border-t border-neutral-200 pt-14 md:mt-32 md:grid-cols-[1fr_1fr] md:gap-16">
-          <div>
-            <p className="text-[11px] tracking-[0.32em] text-neutral-500">SUB SERVICE 01</p>
-            <h3 className="mt-3 text-xl font-bold tracking-tight text-neutral-950 md:text-2xl">
-              {SUB_SERVICE.title}
-            </h3>
-            <p className="mt-2 text-sm tracking-[0.14em] text-neutral-600">{SUB_SERVICE.ja}</p>
-            <p className="mt-8 text-[13px] leading-[2] text-neutral-800">{SUB_SERVICE.desc}</p>
-          </div>
-          <div className="relative aspect-[16/10] w-full overflow-hidden bg-neutral-200 md:aspect-[4/3]">
-            <Image
-              src={SUB_SERVICE.image}
-              alt={SUB_SERVICE.title}
-              fill
-              unoptimized
-              sizes="(max-width: 900px) 100vw, 50vw"
-              className="object-cover"
+          {/* Media column */}
+          <div
+            style={{
+              flex: "1 1 0",
+              minWidth: 0,
+              borderRadius: "16px",
+              overflow: "hidden",
+              boxShadow: "0 22px 60px rgba(0,0,0,0.45)",
+              border: "1px solid rgba(255,255,255,0.08)",
+            }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={IMAGES.serviceWorry}
+              alt="店舗経営に悩む経営者"
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                filter: "brightness(0.96) saturate(0.96)",
+              }}
             />
           </div>
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          #service .d1-split {
+            flex-direction: column !important;
+            gap: 1.8rem !important;
+            margin-top: 2rem !important;
+          }
+          #service .d1-split > div { flex: 0 0 auto !important; width: 100% !important; }
+        }
+      `}</style>
     </section>
   );
 }
