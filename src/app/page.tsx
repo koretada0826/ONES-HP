@@ -6,6 +6,7 @@ import D1TrackRecord from "@/components/design1/D1TrackRecord";
 import D1News from "@/components/design1/D1News";
 import D1Contact from "@/components/design1/D1Contact";
 import D1Footer from "@/components/design1/D1Footer";
+import D1LineFab from "@/components/design1/D1LineFab";
 
 export default function HomePage() {
   return (
@@ -24,6 +25,7 @@ export default function HomePage() {
         <D1Contact />
       </main>
       <D1Footer />
+      <D1LineFab />
     </div>
   );
 }
